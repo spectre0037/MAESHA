@@ -27,7 +27,7 @@ import OrderHistory from "./pages/OrderHistory";
 import MyOrders from "./pages/MyOrders"; 
 import Footer from "./components/Footer";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-import TermsAndConditions from "./pages/TermsandConditions";
+import TermsAndConditions from "./pages/TermsAndConditions";
 import HelpCenter from "./pages/HelpCenter";
 
 // Scroll Reset Helper
