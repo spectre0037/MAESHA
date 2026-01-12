@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Apply to the entire project */
+/* If using a Google Font alternative like League Spartan (very similar to Kenao) */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'Kenao';
+  src: url('./fonts/Kenao.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Ensure your global font is still Poppins */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: 'Poppins', sans-serif; /* Global site font */
+  }
+}
+/* In your index.css */
+@keyframes bounce-short {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.animate-bounce-short {
+  animation: bounce-short 0.5s ease-in-out 1;
+}
+
+/* If not using tailwind-animate plugin, add these for the entry effect: */
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-in {
+  animation: fadeInSlideUp 0.6s ease-out forwards;
+}

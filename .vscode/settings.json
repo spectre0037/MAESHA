@@ -1,0 +1,8 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#5D0F0D",
+        "titleBar.activeBackground": "#821513",
+        "titleBar.activeForeground": "#FEFBFB"
+    },
+    "postman.settings.dotenv-detection-notification-visibility": false
+}
