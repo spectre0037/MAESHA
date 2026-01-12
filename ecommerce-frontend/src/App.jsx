@@ -18,7 +18,7 @@ import ProductDetail from "./pages/ProductDetail";
 import Cart from "./pages/Cart";
 import AdminDashboard from "./pages/AdminDashboard";
 import Categories from "./pages/Categories";
-import Wishlist from "./pages/Wishlist";
+import Wishlist from "./pages/WishList";
 import Navbar from "./components/Navbar";
 import ProtectedRoute from "./components/ProtectedRoute";
 import PublicRoute from "./components/PublicRoute";
