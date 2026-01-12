@@ -99,6 +99,7 @@ const authSlice = createSlice({
   },
 });
 
+
 export const { logout, clearError, setUser, setLoading } = authSlice.actions;
 
 export const signupUser = registerUser;
