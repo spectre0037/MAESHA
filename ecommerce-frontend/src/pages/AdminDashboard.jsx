@@ -117,10 +117,10 @@ const AdminDashboard = () => {
         <div className="p-8 flex justify-between items-center">
           <div>
             <h1 className="text-[22px] font-kenao tracking-tight">
-              MAESHA<span className="text-[#FF8F9C]">HQ</span>
+              MAESHA<span className="text-[#FF8F9C]"></span>
             </h1>
             <p className="text-[10px] text-[#787878] uppercase tracking-[0.3em] mt-2 font-bold">
-              Management v2.0
+              AMINISTRATION PANEL
             </p>
           </div>
           <button
@@ -167,14 +167,7 @@ const AdminDashboard = () => {
             label="Back to Store"
             onClick={() => navigate("/")}
           />
-          <NavItem icon={<FaCog />} label="Settings" />
         </nav>
-
-        <div className="p-6 border-t border-white/5">
-          <button className="flex items-center gap-3 text-[#787878] hover:text-white transition-colors text-sm font-bold uppercase tracking-widest">
-            <FaSignOutAlt /> Terminate
-          </button>
-        </div>
       </aside>
 
       {/* --- MAIN CONTENT AREA --- */}
