@@ -107,15 +107,15 @@ const ProductCard = ({ product }) => {
           {salePrice ? (
             <>
               <span className="text-[#212121] font-bold text-[15px]">
-                ${salePrice.toFixed(2)}
+                {salePrice.toFixed(2)} PKR
               </span>
               <del className="text-[#787878] text-[13px]">
-                ${originalPrice.toFixed(2)}
+                {originalPrice.toFixed(2)} PKR
               </del>
             </>
           ) : (
             <span className="text-[#212121] font-bold text-[15px]">
-              ${originalPrice.toFixed(2)}
+                {originalPrice.toFixed(2)} PKR
             </span>
           )}
         </div>

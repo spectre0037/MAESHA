@@ -213,7 +213,7 @@ const AdminDashboard = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-8 md:mb-10">
             <StatCard
               label="Net Revenue"
-              value={`$${totalRevenue.toLocaleString()}`}
+              value={`${totalRevenue.toLocaleString()} PKR`}
               icon={<FaChartLine />}
               trend="+12.5%"
             />
