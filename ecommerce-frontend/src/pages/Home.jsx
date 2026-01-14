@@ -110,7 +110,7 @@ const Home = () => {
             {carouselData.map((slide) => (
               <div key={slide.id} className="min-w-full h-full relative">
                 <img
-                  src="../assets/1.jpeg"
+                  src="/ecommerce-frontend/src/assets/1.jpeg"
                   alt={slide.title}
                   className="w-full h-full object-cover"
                 />
