@@ -85,13 +85,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 pb-16 border-b border-white/10 items-center">
           <motion.div variants={itemVariants}>
             <h2 className="text-[24px] md:text-[32px] font-bold uppercase tracking-[0.2em]">
-              Join the <span className="text-[#FF8F9C]">Inner Circle</span>
+              Join the <span className="text-[#BA7786]">Inner Circle</span>
             </h2>
             <p className="text-gray-400 text-[14px] mt-2">Get early access to drops and premium style edits.</p>
           </motion.div>
           
           <motion.div variants={itemVariants} className="relative group">
-            <form onSubmit={handleSubscribe} className="flex bg-white/5 backdrop-blur-md rounded-full border border-white/10 p-1.5 focus-within:border-[#FF8F9C] transition-all duration-500">
+            <form onSubmit={handleSubscribe} className="flex bg-white/5 backdrop-blur-md rounded-full border border-white/10 p-1.5 focus-within:border-[#BA7786] transition-all duration-500">
               <input 
                 type="email" 
                 required
@@ -102,13 +102,13 @@ const Footer = () => {
               />
               <button 
                 type="submit"
-                className="bg-[#FF8F9C] text-white px-8 py-3 rounded-full font-bold uppercase text-[11px] tracking-widest hover:bg-white hover:text-[#212121] transition-all duration-300 whitespace-nowrap"
+                className="bg-[#BA7786] text-white px-8 py-3 rounded-full font-bold uppercase text-[11px] tracking-widest hover:bg-white hover:text-[#212121] transition-all duration-300 whitespace-nowrap"
               >
                 Subscribe
               </button>
             </form>
             {status && (
-              <p className={`absolute -bottom-8 left-6 text-[12px] ${status.includes("Success") ? "text-green-400" : "text-[#FF8F9C]"}`}>
+              <p className={`absolute -bottom-8 left-6 text-[12px] ${status.includes("Success") ? "text-green-400" : "text-[#BA7786]"}`}>
                 {status}
               </p>
             )}
@@ -119,7 +119,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 py-16">
           <motion.div variants={itemVariants} className="space-y-6">
             <h3 className="text-[20px] font-black tracking-[0.3em] text-white">
-              Ma<span className="text-[#FF8F9C]">E</span>sha
+              Ma<span className="text-[#BA7786]">E</span>sha
             </h3>
             <p className="text-gray-400 text-[13px] leading-relaxed">
               Curating high-performance essentials for the modern minimalist. Precision crafted. Ethically sourced.
@@ -128,7 +128,7 @@ const Footer = () => {
               {[FaInstagram, FaFacebookF, FaTwitter, FaPinterestP].map((Icon, idx) => (
                 <motion.a 
                   key={idx}
-                  whileHover={{ y: -5, color: "#FF8F9C" }}
+                  whileHover={{ y: -5, color: "#BA7786" }}
                   href="#" 
                   className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 transition-colors"
                 >
@@ -142,7 +142,7 @@ const Footer = () => {
           <FooterColumn title="Support" links={supportLinks} />
 
           <motion.div variants={itemVariants} className="space-y-6">
-            <h4 className="text-[12px] font-bold uppercase tracking-[0.2em] text-[#FF8F9C]">Connect with us</h4>
+            <h4 className="text-[12px] font-bold uppercase tracking-[0.2em] text-[#BA7786]">Connect with us</h4>
             <div className="space-y-4">
               <ContactItem icon={<FaMapMarkerAlt />} text="Lahore, Pakistan" />
               <ContactItem icon={<FaPhoneAlt />} text="+92 303-6119780 | +92 319-3669421" />
@@ -164,7 +164,7 @@ const Footer = () => {
 // ... (Sub-components FooterColumn and ContactItem remain the same)
 const FooterColumn = ({ title, links }) => (
   <motion.div variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} className="space-y-6">
-    <h4 className="text-[12px] font-bold uppercase tracking-[0.2em] text-[#FF8F9C]">{title}</h4>
+    <h4 className="text-[12px] font-bold uppercase tracking-[0.2em] text-[#BA7786]">{title}</h4>
     <ul className="space-y-4">
       {links.map((link) => (
         <li key={link.name}>
@@ -184,7 +184,7 @@ const FooterColumn = ({ title, links }) => (
 
 const ContactItem = ({ icon, text }) => (
   <div className="flex items-center gap-4 text-[13px] text-gray-400">
-    <span className="text-[#FF8F9C]">{icon}</span>
+    <span className="text-[#BA7786]">{icon}</span>
     <span>{text}</span>
   </div>
 );

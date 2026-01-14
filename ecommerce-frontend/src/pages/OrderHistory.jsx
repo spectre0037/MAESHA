@@ -63,7 +63,7 @@ const OrderHistory = () => {
   if (loading) {
     return (
       <div className="flex flex-col items-center justify-center py-32 font-['Poppins']">
-        <div className="w-10 h-10 border-4 border-[#EDEDED] border-t-[#FF8F9C] rounded-full animate-spin mb-4"></div>
+        <div className="w-10 h-10 border-4 border-[#EDEDED] border-t-[#BA7786] rounded-full animate-spin mb-4"></div>
         <p className="text-[#787878] font-semibold text-[14px]">
           Loading History...
         </p>
@@ -85,7 +85,7 @@ const OrderHistory = () => {
         <div>
           <Link
             to="/"
-            className="text-[#FF8F9C] text-[12px] font-bold uppercase tracking-widest flex items-center gap-2 mb-4 hover:text-[#212121] transition-colors"
+            className="text-[#BA7786] text-[12px] font-bold uppercase tracking-widest flex items-center gap-2 mb-4 hover:text-[#212121] transition-colors"
           >
             <FaArrowLeft size={10} /> Back to Shop
           </Link>
@@ -128,7 +128,7 @@ const OrderHistory = () => {
           </p>
           <Link
             to="/"
-            className="bg-[#212121] text-white px-10 py-3 rounded-[5px] font-bold uppercase text-[12px] tracking-widest hover:bg-[#FF8F9C] transition-all"
+            className="bg-[#212121] text-white px-10 py-3 rounded-[5px] font-bold uppercase text-[12px] tracking-widest hover:bg-[#BA7786] transition-all"
           >
             Start Shopping
           </Link>
@@ -161,7 +161,7 @@ const OrderHistory = () => {
                     </span>
 
                     {order.status?.toLowerCase() === "delivered" && (
-                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-[5px] border border-[#FF8F9C30] bg-[#FF8F9C10] text-[#FF8F9C] text-[10px] font-bold uppercase tracking-wider">
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-[5px] border border-[#BA778630] bg-[#BA778610] text-[#BA7786] text-[10px] font-bold uppercase tracking-wider">
                         <FaStar size={9} /> Rate Products
                       </span>
                     )}
@@ -180,14 +180,14 @@ const OrderHistory = () => {
                     <p className="text-[#787878] text-[10px] font-bold uppercase tracking-widest mb-1">
                       Total Amount
                     </p>
-                    <p className="text-[20px] font-bold text-[#FF8F9C]">
+                    <p className="text-[20px] font-bold text-[#BA7786]">
                       $
                       {(
                         Number(order.total_amount || order.total_price) || 0
                       ).toFixed(2)}
                     </p>
                   </div>
-                  <button className="bg-[#F7F7F7] group-hover:bg-[#FF8F9C] group-hover:text-white p-4 rounded-[5px] transition-all text-[#212121]">
+                  <button className="bg-[#F7F7F7] group-hover:bg-[#BA7786] group-hover:text-white p-4 rounded-[5px] transition-all text-[#212121]">
                     <FaReceipt size={16} />
                   </button>
                 </div>

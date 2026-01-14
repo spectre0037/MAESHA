@@ -39,7 +39,7 @@ const Cart = () => {
         </p>
         <Link
           to="/categories"
-          className="bg-[#FF8F9C] text-white px-8 py-3 rounded-[5px] hover:bg-[#212121] transition-all inline-flex items-center gap-3 font-bold uppercase text-[13px] tracking-widest"
+          className="bg-[#BA7786] text-white px-8 py-3 rounded-[5px] hover:bg-[#212121] transition-all inline-flex items-center gap-3 font-bold uppercase text-[13px] tracking-widest"
         >
           <FaArrowLeft size={12} /> Return to Shop
         </Link>
@@ -78,7 +78,7 @@ const Cart = () => {
                     className="w-24 h-24 object-contain"
                   />
                   {hasDiscount && (
-                    <div className="absolute -top-2 -left-2 bg-[#FF8F9C] text-white p-1.5 rounded-full">
+                    <div className="absolute -top-2 -left-2 bg-[#BA7786] text-white p-1.5 rounded-full">
                       <FaTag size={8} />
                     </div>
                   )}
@@ -93,7 +93,7 @@ const Cart = () => {
                   </p>
 
                   <div className="flex items-center justify-center sm:justify-start gap-3">
-                    <p className="text-[#FF8F9C] font-bold text-[18px]">
+                    <p className="text-[#BA7786] font-bold text-[18px]">
                       ${Number(displayPrice).toFixed(2)}
                     </p>
                     {hasDiscount && (
@@ -176,14 +176,14 @@ const Cart = () => {
             <span className="text-[#212121] font-bold uppercase text-[14px]">
               Total
             </span>
-            <span className="text-[22px] font-bold text-[#FF8F9C]">
+            <span className="text-[22px] font-bold text-[#BA7786]">
               ${totalPrice.toFixed(2)}
             </span>
           </div>
 
           <button
             onClick={handleCheckout}
-            className="w-full mt-8 bg-[#212121] text-white py-3 rounded-[5px] font-bold uppercase text-[13px] tracking-widest hover:bg-[#FF8F9C] transition-all"
+            className="w-full mt-8 bg-[#212121] text-white py-3 rounded-[5px] font-bold uppercase text-[13px] tracking-widest hover:bg-[#BA7786] transition-all"
           >
             {user ? "Proceed to Checkout" : "Login to Checkout"}
           </button>

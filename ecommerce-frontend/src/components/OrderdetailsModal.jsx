@@ -48,7 +48,7 @@ const OrderDetailsModal = ({ order, onClose }) => {
           <div className="flex gap-3">
             <button
               onClick={handleDownloadPDF}
-              className="flex items-center gap-2 px-4 py-2 bg-[#212121] text-white rounded-[5px] font-bold text-[11px] uppercase tracking-widest hover:bg-[#FF8F9C] transition-all"
+              className="flex items-center gap-2 px-4 py-2 bg-[#212121] text-white rounded-[5px] font-bold text-[11px] uppercase tracking-widest hover:bg-[#BA7786] transition-all"
             >
               <FaDownload size={12} /> Save PDF
             </button>
@@ -61,7 +61,7 @@ const OrderDetailsModal = ({ order, onClose }) => {
           </div>
           <button
             onClick={onClose}
-            className="text-[#787878] hover:text-[#FF8F9C] transition-colors"
+            className="text-[#787878] hover:text-[#BA7786] transition-colors"
           >
             <FaTimes size={20} />
           </button>
@@ -72,7 +72,7 @@ const OrderDetailsModal = ({ order, onClose }) => {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 gap-4">
             <div>
               <h1 className="text-[28px] font-bold text-[#212121] tracking-tight mb-1">
-                ANON <span className="text-[#FF8F9C]">MAESHA</span>
+                ANON <span className="text-[#BA7786]">MAESHA</span>
               </h1>
               <p className="text-[#787878] font-bold uppercase text-[10px] tracking-[0.3em]">
                 Premium Lifestyle Store
@@ -165,7 +165,7 @@ const OrderDetailsModal = ({ order, onClose }) => {
                       {order.status?.toLowerCase() === "delivered" ? (
                         <button
                           onClick={() => handleReviewClick(item.product_id)}
-                          className="text-[#FF8F9C] hover:text-[#212121] transition-colors p-2"
+                          className="text-[#BA7786] hover:text-[#212121] transition-colors p-2"
                           title="Rate this product"
                         >
                           <FaStar size={16} />
@@ -194,7 +194,7 @@ const OrderDetailsModal = ({ order, onClose }) => {
                 <span className="text-[#212121] font-bold uppercase text-[14px]">
                   Total Amount
                 </span>
-                <span className="text-[24px] font-bold text-[#FF8F9C]">
+                <span className="text-[24px] font-bold text-[#BA7786]">
                   ${Number(order.total_amount).toFixed(2)}
                 </span>
               </div>
@@ -226,7 +226,7 @@ const OrderDetailsModal = ({ order, onClose }) => {
 
         <button
           onClick={onClose}
-          className="w-full mt-10 py-3 bg-[#212121] text-white rounded-[5px] font-bold uppercase text-[12px] tracking-widest hover:bg-[#FF8F9C] transition-all no-print"
+          className="w-full mt-10 py-3 bg-[#212121] text-white rounded-[5px] font-bold uppercase text-[12px] tracking-widest hover:bg-[#BA7786] transition-all no-print"
         >
           Return to History
         </button>

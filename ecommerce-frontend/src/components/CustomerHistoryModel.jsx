@@ -41,7 +41,7 @@ const CustomerHistoryModal = ({ customer, onClose }) => {
           </div>
           <button 
             onClick={onClose} 
-            className="text-[#787878] hover:text-[#FF8F9C] transition-colors p-2"
+            className="text-[#787878] hover:text-[#BA7786] transition-colors p-2"
           >
             <FaTimes size={20} />
           </button>
@@ -59,7 +59,7 @@ const CustomerHistoryModal = ({ customer, onClose }) => {
             label="Lifetime Value" 
             value={`$${totalSpent.toFixed(2)}`} 
             icon={<FaWallet />} 
-            color="bg-[#FF8F9C]" 
+            color="bg-[#BA7786]" 
           />
           <StatBox 
             label="Member Since" 
@@ -80,7 +80,7 @@ const CustomerHistoryModal = ({ customer, onClose }) => {
 
           {loading ? (
             <div className="flex flex-col items-center py-20">
-              <div className="w-8 h-8 border-2 border-[#EDEDED] border-t-[#FF8F9C] rounded-full animate-spin mb-4"></div>
+              <div className="w-8 h-8 border-2 border-[#EDEDED] border-t-[#BA7786] rounded-full animate-spin mb-4"></div>
               <p className="text-[12px] font-bold text-[#787878] uppercase tracking-widest">Retrieving Archive...</p>
             </div>
           ) : orders.length === 0 ? (
@@ -90,7 +90,7 @@ const CustomerHistoryModal = ({ customer, onClose }) => {
           ) : (
             <div className="space-y-3">
               {orders.map((order) => (
-                <div key={order.id} className="group flex flex-col md:flex-row md:items-center justify-between p-5 bg-white border border-[#EDEDED] rounded-[5px] hover:border-[#FF8F9C] transition-all">
+                <div key={order.id} className="group flex flex-col md:flex-row md:items-center justify-between p-5 bg-white border border-[#EDEDED] rounded-[5px] hover:border-[#BA7786] transition-all">
                   <div className="flex flex-col gap-1">
                     <div className="flex items-center gap-3">
                       <span className="font-bold text-[#212121] text-[14px]">ORDER #{order.id}</span>
@@ -107,7 +107,7 @@ const CustomerHistoryModal = ({ customer, onClose }) => {
                     <p className="font-bold text-[#212121] text-[18px] tracking-tight">
                       ${Number(order.total_amount).toFixed(2)}
                     </p>
-                    <p className="text-[10px] text-[#FF8F9C] font-bold uppercase tracking-tighter">
+                    <p className="text-[10px] text-[#BA7786] font-bold uppercase tracking-tighter">
                       Verified Transaction
                     </p>
                   </div>
@@ -121,7 +121,7 @@ const CustomerHistoryModal = ({ customer, onClose }) => {
         <div className="mt-8 pt-6 border-t border-[#EDEDED]">
           <button 
             onClick={onClose}
-            className="w-full py-4 bg-[#212121] text-white rounded-[5px] font-bold uppercase tracking-[0.2em] text-[12px] hover:bg-[#FF8F9C] transition-all duration-300 shadow-sm"
+            className="w-full py-4 bg-[#212121] text-white rounded-[5px] font-bold uppercase tracking-[0.2em] text-[12px] hover:bg-[#BA7786] transition-all duration-300 shadow-sm"
           >
             Return to Dashboard
           </button>

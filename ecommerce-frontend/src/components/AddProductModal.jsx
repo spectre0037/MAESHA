@@ -70,14 +70,14 @@ const AddProductModal = ({ onClose, onRefresh }) => {
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-6 right-6 text-[#787878] hover:text-[#FF8F9C] transition-colors"
+          className="absolute top-6 right-6 text-[#787878] hover:text-[#BA7786] transition-colors"
         >
           <FaTimes size={20} />
         </button>
 
         <header className="mb-8 border-b border-[#EDEDED] pb-6">
           <h2 className="text-[24px] font-bold text-[#212121] uppercase tracking-tight">
-            Add <span className="text-[#FF8F9C]">New Item</span>
+            Add <span className="text-[#BA7786]">New Item</span>
           </h2>
           <p className="text-[#787878] text-[13px] italic mt-1 font-medium">
             Create a new entry in the Anon catalog
@@ -111,7 +111,7 @@ const AddProductModal = ({ onClose, onRefresh }) => {
               </label>
               <input
                 required
-                className="w-full px-4 py-3 bg-[#F7F7F7] border border-[#EDEDED] rounded-[5px] focus:border-[#FF8F9C] outline-none text-[14px] font-medium"
+                className="w-full px-4 py-3 bg-[#F7F7F7] border border-[#EDEDED] rounded-[5px] focus:border-[#BA7786] outline-none text-[14px] font-medium"
                 placeholder="e.g., Slim-Fit Cotton Shirt"
                 onChange={(e) =>
                   setFormData({ ...formData, name: e.target.value })
@@ -129,7 +129,7 @@ const AddProductModal = ({ onClose, onRefresh }) => {
                   required
                   type="number"
                   step="0.01"
-                  className="w-full px-4 py-3 bg-[#F7F7F7] border border-[#EDEDED] rounded-[5px] focus:border-[#FF8F9C] outline-none text-[14px]"
+                  className="w-full px-4 py-3 bg-[#F7F7F7] border border-[#EDEDED] rounded-[5px] focus:border-[#BA7786] outline-none text-[14px]"
                   placeholder="0.00"
                   onChange={(e) =>
                     setFormData({ ...formData, price: e.target.value })
@@ -137,13 +137,13 @@ const AddProductModal = ({ onClose, onRefresh }) => {
                 />
               </div>
               <div>
-                <label className="text-[11px] font-bold text-[#FF8F9C] uppercase tracking-widest block mb-2 flex items-center gap-1">
+                <label className="text-[11px] font-bold text-[#BA7786] uppercase tracking-widest block mb-2 flex items-center gap-1">
                   <FaTag size={10} /> Sale Price ($)
                 </label>
                 <input
                   type="number"
                   step="0.01"
-                  className="w-full px-4 py-3 bg-[#fff1f2] border border-[#FF8F9C]/20 rounded-[5px] focus:border-[#FF8F9C] outline-none text-[14px] text-[#FF8F9C]"
+                  className="w-full px-4 py-3 bg-[#fff1f2] border border-[#BA7786]/20 rounded-[5px] focus:border-[#BA7786] outline-none text-[14px] text-[#BA7786]"
                   placeholder="Optional"
                   onChange={(e) =>
                     setFormData({ ...formData, discount_price: e.target.value })
@@ -161,7 +161,7 @@ const AddProductModal = ({ onClose, onRefresh }) => {
                 <input
                   required
                   type="number"
-                  className="w-full px-4 py-3 bg-[#F7F7F7] border border-[#EDEDED] rounded-[5px] focus:border-[#FF8F9C] outline-none text-[14px]"
+                  className="w-full px-4 py-3 bg-[#F7F7F7] border border-[#EDEDED] rounded-[5px] focus:border-[#BA7786] outline-none text-[14px]"
                   placeholder="0"
                   onChange={(e) =>
                     setFormData({ ...formData, stock: e.target.value })
@@ -173,7 +173,7 @@ const AddProductModal = ({ onClose, onRefresh }) => {
                   Collection
                 </label>
                 <select
-                  className="w-full px-4 py-3 bg-[#F7F7F7] border border-[#EDEDED] rounded-[5px] focus:border-[#FF8F9C] outline-none text-[14px] cursor-pointer appearance-none"
+                  className="w-full px-4 py-3 bg-[#F7F7F7] border border-[#EDEDED] rounded-[5px] focus:border-[#BA7786] outline-none text-[14px] cursor-pointer appearance-none"
                   value={formData.category}
                   onChange={(e) =>
                     setFormData({ ...formData, category: e.target.value })
@@ -220,7 +220,7 @@ const AddProductModal = ({ onClose, onRefresh }) => {
               {useUrl ? (
                 <input
                   required
-                  className="w-full px-4 py-3 bg-white border border-[#EDEDED] rounded-[5px] focus:border-[#FF8F9C] outline-none text-[13px]"
+                  className="w-full px-4 py-3 bg-white border border-[#EDEDED] rounded-[5px] focus:border-[#BA7786] outline-none text-[13px]"
                   placeholder="Insert image link here..."
                   onChange={(e) =>
                     setFormData({ ...formData, image_url: e.target.value })
@@ -244,7 +244,7 @@ const AddProductModal = ({ onClose, onRefresh }) => {
                 Item Description
               </label>
               <textarea
-                className="w-full px-4 py-3 bg-[#F7F7F7] border border-[#EDEDED] rounded-[5px] h-24 focus:border-[#FF8F9C] outline-none text-[14px] resize-none"
+                className="w-full px-4 py-3 bg-[#F7F7F7] border border-[#EDEDED] rounded-[5px] h-24 focus:border-[#BA7786] outline-none text-[14px] resize-none"
                 placeholder="Describe the item details..."
                 onChange={(e) =>
                   setFormData({ ...formData, description: e.target.value })
@@ -257,7 +257,7 @@ const AddProductModal = ({ onClose, onRefresh }) => {
             <button
               type="submit"
               disabled={loading}
-              className="w-full py-4 bg-[#212121] text-white rounded-[5px] font-bold uppercase tracking-widest text-[12px] hover:bg-[#FF8F9C] transition-all disabled:bg-[#EDEDED]"
+              className="w-full py-4 bg-[#212121] text-white rounded-[5px] font-bold uppercase tracking-widest text-[12px] hover:bg-[#BA7786] transition-all disabled:bg-[#EDEDED]"
             >
               {loading ? "Processing..." : "Confirm & Save Product"}
             </button>

@@ -109,7 +109,7 @@ const Home = () => {
                   </p>
                   <Link
                     to='/'
-                    className="bg-[#FF8F9C] text-white px-6 py-2 md:py-3 rounded-[5px] text-[12px] md:text-[14px] font-bold uppercase w-fit hover:bg-white hover:text-[#212121] transition-all"
+                    className="bg-[#BA7786] text-white px-6 py-2 md:py-3 rounded-[5px] text-[12px] md:text-[14px] font-bold uppercase w-fit hover:bg-white hover:text-[#212121] transition-all"
                   >
                     Shop Now
                   </Link>
@@ -146,7 +146,7 @@ const Home = () => {
               <div
                 key={idx}
                 className={`h-2 rounded-full transition-all ${
-                  currentSlide === idx ? "w-8 bg-[#FF8F9C]" : "w-2 bg-white/50"
+                  currentSlide === idx ? "w-8 bg-[#BA7786]" : "w-2 bg-white/50"
                 }`}
               />
             ))}
@@ -160,10 +160,10 @@ const Home = () => {
           {searchQuery ? (
             <h2 className="text-[#212121] text-[1.1rem] md:text-[1.25rem] font-semibold uppercase tracking-wide">
               Results for:{" "}
-              <span className="text-[#FF8F9C] italic">"{searchQuery}"</span>
+              <span className="text-[#BA7786] italic">"{searchQuery}"</span>
             </h2>
           ) : (
-            <h2 className="text-[#212121] text-[1.1rem] md:text-[1.25rem] font-semibold uppercase tracking-wide border-b-2 border-[#FF8F9C] inline-block pb-2">
+            <h2 className="text-[#212121] text-[1.1rem] md:text-[1.25rem] font-semibold uppercase tracking-wide border-b-2 border-[#BA7786] inline-block pb-2">
               New Products
             </h2>
           )}
@@ -196,7 +196,7 @@ const Home = () => {
           </p>
           <button
             onClick={() => setSearchParams({})}
-            className="bg-[#FF8F9C] text-white px-6 py-2.5 rounded-[5px] text-[12px] md:text-[14px] font-bold uppercase hover:bg-[#212121] transition-all w-full sm:w-auto"
+            className="bg-[#BA7786] text-white px-6 py-2.5 rounded-[5px] text-[12px] md:text-[14px] font-bold uppercase hover:bg-[#212121] transition-all w-full sm:w-auto"
           >
             Clear Search
           </button>
@@ -221,7 +221,7 @@ const Home = () => {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     {isOnSale && (
-                      <p className="absolute top-2 left-2 bg-[#FF8F9C] text-white text-[10px] font-semibold px-2 py-0.5 rounded-[5px]">
+                      <p className="absolute top-2 left-2 bg-[#BA7786] text-white text-[10px] font-semibold px-2 py-0.5 rounded-[5px]">
                         -
                         {calculateDiscount(
                           product.price,
@@ -235,7 +235,7 @@ const Home = () => {
                   <div className="p-3 md:p-4 flex flex-col flex-1">
                     <Link
                       to={`/category/${product.category}`}
-                      className="text-[#FF8F9C] text-[11px] font-medium uppercase mb-1 truncate"
+                      className="text-[#BA7786] text-[11px] font-medium uppercase mb-1 truncate"
                     >
                       {product.category}
                     </Link>
@@ -262,7 +262,7 @@ const Home = () => {
                     </div>
                     <Link
                       to={`/product/${product.id}`}
-                      className="mt-4 w-full block py-2 bg-[#212121] text-white text-center rounded-[5px] text-[11px] font-bold uppercase tracking-wider hover:bg-[#FF8F9C] transition-all"
+                      className="mt-4 w-full block py-2 bg-[#212121] text-white text-center rounded-[5px] text-[11px] font-bold uppercase tracking-wider hover:bg-[#BA7786] transition-all"
                     >
                       View Details
                     </Link>

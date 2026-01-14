@@ -86,7 +86,7 @@ const Checkout = () => {
         </p>
         <button
           onClick={() => navigate("/")}
-          className="px-10 py-3 bg-[#FF8F9C] text-white rounded-[5px] font-bold uppercase tracking-widest text-[13px] hover:bg-[#212121] transition-all"
+          className="px-10 py-3 bg-[#BA7786] text-white rounded-[5px] font-bold uppercase tracking-widest text-[13px] hover:bg-[#212121] transition-all"
         >
           Explore Collection
         </button>
@@ -98,7 +98,7 @@ const Checkout = () => {
     <div className="container mx-auto px-4 py-10 max-w-6xl font-['Poppins']">
       <header className="mb-10 border-b border-[#EDEDED] pb-6">
         <h1 className="text-[#212121] text-[28px] font-bold uppercase tracking-wide">
-          Secure <span className="text-[#FF8F9C]">Checkout</span>
+          Secure <span className="text-[#BA7786]">Checkout</span>
         </h1>
         <p className="text-[#787878] text-[14px] mt-1">
           Provide delivery and payment verification to finalize your order.
@@ -111,7 +111,7 @@ const Checkout = () => {
           {/* LOGISTICS */}
           <section className="bg-white p-6 rounded-[10px] border border-[#EDEDED]">
             <h2 className="text-[16px] font-bold mb-6 flex items-center text-[#212121] uppercase tracking-wider">
-              <FaTruck className="text-[#FF8F9C] mr-3" />
+              <FaTruck className="text-[#BA7786] mr-3" />
               Delivery Details
             </h2>
             <div className="space-y-4">
@@ -123,7 +123,7 @@ const Checkout = () => {
                   type="text"
                   name="phone_number"
                   placeholder="+1 (555) 000-0000"
-                  className="w-full p-3 border border-[#EDEDED] rounded-[5px] outline-none focus:border-[#FF8F9C] text-[14px] transition-all"
+                  className="w-full p-3 border border-[#EDEDED] rounded-[5px] outline-none focus:border-[#BA7786] text-[14px] transition-all"
                   value={formData.phone_number}
                   onChange={handleInputChange}
                   required
@@ -137,7 +137,7 @@ const Checkout = () => {
                   name="address"
                   placeholder="Street name, Apartment, City, Postal Code"
                   rows="3"
-                  className="w-full p-3 border border-[#EDEDED] rounded-[5px] outline-none focus:border-[#FF8F9C] text-[14px] transition-all"
+                  className="w-full p-3 border border-[#EDEDED] rounded-[5px] outline-none focus:border-[#BA7786] text-[14px] transition-all"
                   value={formData.address}
                   onChange={handleInputChange}
                   required
@@ -149,11 +149,11 @@ const Checkout = () => {
           {/* PAYMENT */}
           <section className="bg-white p-6 rounded-[10px] border border-[#EDEDED]">
             <h2 className="text-[16px] font-bold mb-6 flex items-center text-[#212121] uppercase tracking-wider">
-              <FaFileInvoiceDollar className="text-[#FF8F9C] mr-3" />
+              <FaFileInvoiceDollar className="text-[#BA7786] mr-3" />
               Payment Verification
             </h2>
 
-            <div className="bg-gradient-to-r from-[#FF8F9C] to-[#ffb1ba] text-white p-6 rounded-[10px] mb-6 relative overflow-hidden shadow-md">
+            <div className="bg-gradient-to-r from-[#BA7786] to-[#ffb1ba] text-white p-6 rounded-[10px] mb-6 relative overflow-hidden shadow-md">
               <div className="relative z-10">
                 <p className="text-[11px] font-bold uppercase tracking-widest opacity-90 mb-3">
                   Bank Transfer Details
@@ -174,7 +174,7 @@ const Checkout = () => {
                 onClick={() => setUseUrl(false)}
                 className={`flex-1 py-2 rounded-[5px] text-[11px] font-bold uppercase tracking-widest transition-all ${
                   !useUrl
-                    ? "bg-white text-[#FF8F9C] shadow-sm"
+                    ? "bg-white text-[#BA7786] shadow-sm"
                     : "text-[#787878]"
                 }`}
               >
@@ -185,7 +185,7 @@ const Checkout = () => {
                 onClick={() => setUseUrl(true)}
                 className={`flex-1 py-2 rounded-[5px] text-[11px] font-bold uppercase tracking-widest transition-all ${
                   useUrl
-                    ? "bg-white text-[#FF8F9C] shadow-sm"
+                    ? "bg-white text-[#BA7786] shadow-sm"
                     : "text-[#787878]"
                 }`}
               >
@@ -199,7 +199,7 @@ const Checkout = () => {
                   type="url"
                   name="payment_screenshot_url"
                   placeholder="https://imgur.com/your-receipt.jpg"
-                  className="w-full p-3 border border-[#EDEDED] rounded-[5px] outline-none focus:border-[#FF8F9C] text-[14px]"
+                  className="w-full p-3 border border-[#EDEDED] rounded-[5px] outline-none focus:border-[#BA7786] text-[14px]"
                   value={formData.payment_screenshot_url}
                   onChange={handleInputChange}
                 />
@@ -207,7 +207,7 @@ const Checkout = () => {
                 <div
                   className={`border-2 border-dashed rounded-[10px] p-6 text-center transition-all ${
                     preview
-                      ? "border-[#FF8F9C] bg-[#FFF5F6]"
+                      ? "border-[#BA7786] bg-[#FFF5F6]"
                       : "border-[#EDEDED] bg-[#F7F7F7]"
                   }`}
                 >
@@ -238,7 +238,7 @@ const Checkout = () => {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-[#212121] text-white py-4 rounded-[5px] font-bold text-[14px] uppercase tracking-[0.2em] hover:bg-[#FF8F9C] transition-all disabled:bg-[#EDEDED] disabled:text-[#787878]"
+            className="w-full bg-[#212121] text-white py-4 rounded-[5px] font-bold text-[14px] uppercase tracking-[0.2em] hover:bg-[#BA7786] transition-all disabled:bg-[#EDEDED] disabled:text-[#787878]"
           >
             {loading ? "Processing..." : "Confirm & Place Order"}
           </button>
@@ -304,7 +304,7 @@ const Checkout = () => {
                 <span className="text-[#212121] font-bold uppercase text-[12px]">
                   Total Amount
                 </span>
-                <span className="text-[24px] font-bold text-[#FF8F9C]">
+                <span className="text-[24px] font-bold text-[#BA7786]">
                   ${total.toFixed(2)}
                 </span>
               </div>

@@ -71,7 +71,7 @@ const ProductDetail = () => {
   if (loading)
     return (
       <div className="flex justify-center items-center h-screen">
-        <div className="animate-spin rounded-full h-10 w-10 border-t-2 border-[#FF8F9C] border-r-transparent"></div>
+        <div className="animate-spin rounded-full h-10 w-10 border-t-2 border-[#BA7786] border-r-transparent"></div>
       </div>
     );
 
@@ -83,7 +83,7 @@ const ProductDetail = () => {
         </h2>
         <button
           onClick={() => navigate("/")}
-          className="text-[#FF8F9C] font-semibold flex items-center justify-center gap-2 mx-auto uppercase text-[14px]"
+          className="text-[#BA7786] font-semibold flex items-center justify-center gap-2 mx-auto uppercase text-[14px]"
         >
           <FaChevronLeft /> Return to Shop
         </button>
@@ -97,7 +97,7 @@ const ProductDetail = () => {
       {/* Navigation Breadcrumb Style */}
       <button
         onClick={() => navigate(-1)}
-        className="mb-8 flex items-center gap-2 text-[13px] font-medium uppercase tracking-wider text-[#787878] hover:text-[#FF8F9C] transition-colors"
+        className="mb-8 flex items-center gap-2 text-[13px] font-medium uppercase tracking-wider text-[#787878] hover:text-[#BA7786] transition-colors"
       >
         <FaChevronLeft size={10} /> Back to Collection
       </button>
@@ -112,7 +112,7 @@ const ProductDetail = () => {
               className="w-full aspect-square object-contain p-6"
             />
             {isOnSale && (
-              <p className="absolute top-5 left-5 bg-[#FF8F9C] text-white text-[12px] font-bold px-3 py-1 rounded-[5px] uppercase">
+              <p className="absolute top-5 left-5 bg-[#BA7786] text-white text-[12px] font-bold px-3 py-1 rounded-[5px] uppercase">
                 Sale
               </p>
             )}
@@ -122,21 +122,21 @@ const ProductDetail = () => {
         {/* Product Content Section */}
         <div className="flex-1">
           <div className="mb-6">
-            <p className="text-[#FF8F9C] text-[14px] font-semibold uppercase tracking-widest mb-2">
+            <p className="text-[#BA7786] text-[14px] font-semibold uppercase tracking-widest mb-2">
               {product.category}
             </p>
             <h1 className="text-[#212121] text-[28px] md:text-[32px] font-bold leading-tight mb-4">
               {product.name}
             </h1>
             <div className="flex items-center gap-2">
-              <div className="flex text-[#FF8F9C]">
+              <div className="flex text-[#BA7786]">
                 {[...Array(5)].map((_, i) => (
                   <FaStar
                     key={i}
                     size={14}
                     className={
                       i < Math.round(product.avg_rating)
-                        ? "text-[#FF8F9C]"
+                        ? "text-[#BA7786]"
                         : "text-[#EDEDED]"
                     }
                   />
@@ -151,7 +151,7 @@ const ProductDetail = () => {
           {/* Pricing Box */}
           <div className="mb-8 pb-8 border-b border-[#EDEDED]">
             <div className="flex items-center gap-4 mb-2">
-              <span className="text-[#FF8F9C] text-[24px] font-bold">
+              <span className="text-[#BA7786] text-[24px] font-bold">
                 $
                 {Number(
                   isOnSale ? product.discount_price : product.price
@@ -215,7 +215,7 @@ const ProductDetail = () => {
                 className={`w-full md:w-auto px-12 py-3 rounded-[5px] font-bold uppercase text-[13px] tracking-widest transition-all flex items-center justify-center gap-3 ${
                   added
                     ? "bg-[#5cb85c] text-white"
-                    : "bg-[#212121] text-white hover:bg-[#FF8F9C]"
+                    : "bg-[#212121] text-white hover:bg-[#BA7786]"
                 }`}
               >
                 {added ? <FaCheckCircle /> : <FaShoppingBag />}
@@ -232,7 +232,7 @@ const ProductDetail = () => {
 
       {/* --- REVIEWS SECTION --- */}
       <div className="border-t border-[#EDEDED] pt-12">
-        <h2 className="text-[#212121] text-[20px] font-bold uppercase tracking-wide mb-8 border-b-2 border-[#FF8F9C] inline-block pb-1">
+        <h2 className="text-[#212121] text-[20px] font-bold uppercase tracking-wide mb-8 border-b-2 border-[#BA7786] inline-block pb-1">
           Reviews
         </h2>
 
@@ -262,14 +262,14 @@ const ProductDetail = () => {
                         <span className="font-bold text-[#212121] text-[14px] uppercase">
                           {rev.user_name}
                         </span>
-                        <div className="flex text-[#FF8F9C]">
+                        <div className="flex text-[#BA7786]">
                           {[...Array(5)].map((_, i) => (
                             <FaStar
                               key={i}
                               size={10}
                               className={
                                 i < rev.rating
-                                  ? "text-[#FF8F9C]"
+                                  ? "text-[#BA7786]"
                                   : "text-[#EDEDED]"
                               }
                             />

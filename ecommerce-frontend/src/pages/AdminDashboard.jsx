@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import API from "../api";
 
 // Components
-import OrderCard from "../components/orderCard";
+import OrderCard from "../components/OrderCard";
 import EditProductModal from "../components/EditProductModal";
 import OrderDetailsModal from "../components/OrderdetailsModal";
 import AddProductModal from "../components/AddProductModal";
@@ -117,7 +117,7 @@ const AdminDashboard = () => {
         <div className="p-8 flex justify-between items-center">
           <div>
             <h1 className="text-[22px] font-kenao tracking-tight">
-              MAESHA<span className="text-[#FF8F9C]"></span>
+              MAESHA<span className="text-[#BA7786]"></span>
             </h1>
             <p className="text-[10px] text-[#787878] uppercase tracking-[0.3em] mt-2 font-bold">
               AMINISTRATION PANEL
@@ -197,7 +197,7 @@ const AdminDashboard = () => {
               <p className="text-[11px] font-bold text-[#212121] leading-none">
                 {user.name}
               </p>
-              <p className="text-[9px] text-[#FF8F9C] font-bold uppercase tracking-widest mt-1">
+              <p className="text-[9px] text-[#BA7786] font-bold uppercase tracking-widest mt-1">
                 Super Admin
               </p>
             </div>
@@ -250,7 +250,7 @@ const AdminDashboard = () => {
               {activeTab === "products" && (
                 <button
                   onClick={() => setShowAddModal(true)}
-                  className="w-full sm:w-auto bg-[#212121] text-white px-6 py-2.5 rounded-[5px] text-[11px] font-bold uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-[#FF8F9C] transition-all"
+                  className="w-full sm:w-auto bg-[#212121] text-white px-6 py-2.5 rounded-[5px] text-[11px] font-bold uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-[#BA7786] transition-all"
                 >
                   <FaPlus /> New Product
                 </button>
@@ -279,7 +279,7 @@ const AdminDashboard = () => {
                             className={`px-4 py-2 rounded-[3px] text-[9px] font-bold uppercase tracking-widest transition-all border whitespace-nowrap ${
                               subTab === status
                                 ? "bg-[#212121] border-[#212121] text-white"
-                                : "bg-white text-[#787878] border-[#EDEDED] hover:border-[#FF8F9C]"
+                                : "bg-white text-[#787878] border-[#EDEDED] hover:border-[#BA7786]"
                             }`}
                           >
                             {status} (
@@ -378,13 +378,13 @@ const NavItem = ({ icon, label, active, onClick }) => (
     onClick={onClick}
     className={`w-full flex items-center gap-4 px-6 py-4 rounded-[8px] transition-all group ${
       active
-        ? "bg-[#FF8F9C] text-white shadow-lg shadow-[#FF8F9C]/20"
+        ? "bg-[#BA7786] text-white shadow-lg shadow-[#BA7786]/20"
         : "text-[#787878] hover:bg-white/5 hover:text-white"
     }`}
   >
     <span
       className={`${
-        active ? "text-white" : "group-hover:text-[#FF8F9C]"
+        active ? "text-white" : "group-hover:text-[#BA7786]"
       } transition-colors`}
     >
       {icon}
@@ -397,7 +397,7 @@ const NavItem = ({ icon, label, active, onClick }) => (
 
 const StatCard = ({ label, value, icon, trend, className = "" }) => (
   <div
-    className={`bg-white border border-[#EDEDED] p-6 md:p-8 rounded-[10px] relative overflow-hidden group hover:border-[#FF8F9C]/50 transition-all ${className}`}
+    className={`bg-white border border-[#EDEDED] p-6 md:p-8 rounded-[10px] relative overflow-hidden group hover:border-[#BA7786]/50 transition-all ${className}`}
   >
     <div className="flex justify-between items-start relative z-10">
       <div>
@@ -438,7 +438,7 @@ const AdminProductCard = ({ product, onEdit }) => (
     <h4 className="text-[11px] md:text-[13px] font-bold text-[#212121] truncate">
       {product.name}
     </h4>
-    <p className="text-[#FF8F9C] font-bold text-[12px] md:text-[14px] mb-3 md:mb-4">
+    <p className="text-[#BA7786] font-bold text-[12px] md:text-[14px] mb-3 md:mb-4">
       ${Number(product.price).toFixed(2)}
     </p>
     <button
@@ -453,7 +453,7 @@ const AdminProductCard = ({ product, onEdit }) => (
 const CustomerCard = ({ customer, onClick }) => (
   <div
     onClick={onClick}
-    className="bg-white border border-[#EDEDED] p-4 rounded-[10px] flex items-center gap-3 md:gap-4 hover:border-[#FF8F9C] cursor-pointer transition-all"
+    className="bg-white border border-[#EDEDED] p-4 rounded-[10px] flex items-center gap-3 md:gap-4 hover:border-[#BA7786] cursor-pointer transition-all"
   >
     <div className="w-10 h-10 md:w-12 md:h-12 bg-[#212121] text-white rounded-[5px] flex items-center justify-center font-bold text-base md:text-lg shrink-0">
       {customer.name?.[0] || "C"}
@@ -472,7 +472,7 @@ const CustomerCard = ({ customer, onClick }) => (
 
 const LoadingSkeleton = ({ message }) => (
   <div className="flex flex-col items-center justify-center py-24 w-full">
-    <div className="w-8 h-8 border-2 border-[#EDEDED] border-t-[#FF8F9C] rounded-full animate-spin mb-4" />
+    <div className="w-8 h-8 border-2 border-[#EDEDED] border-t-[#BA7786] rounded-full animate-spin mb-4" />
     <p className="text-[10px] font-bold text-[#787878] uppercase tracking-[0.2em]">
       {message}
     </p>

@@ -99,7 +99,7 @@ const Categories = () => {
 
           <div className="relative z-10 w-full max-w-2xl px-6 md:px-16 py-10">
             <div className="bg-white/40 backdrop-blur-md p-6 md:p-10 rounded-[12px] border border-white/50 inline-block animate-in fade-in slide-in-from-left-4">
-              <p className="text-[#FF8F9C] text-[12px] md:text-[14px] font-bold uppercase tracking-[0.3em] mb-3">
+              <p className="text-[#BA7786] text-[12px] md:text-[14px] font-bold uppercase tracking-[0.3em] mb-3">
                 Trending Category
               </p>
               <h1 className="text-[#212121] text-[32px] md:text-[48px] font-extrabold leading-[1.1] mb-4 capitalize">
@@ -108,7 +108,7 @@ const Categories = () => {
               <p className="text-[#454545] text-[14px] md:text-[16px] mb-8 max-w-sm leading-relaxed">
                 {hero.subtitle}
               </p>
-              <button className="bg-[#212121] text-white px-8 py-3.5 rounded-[5px] text-[12px] font-bold uppercase tracking-widest hover:bg-[#FF8F9C] transition-all duration-300 transform active:scale-95 shadow-lg">
+              <button className="bg-[#212121] text-white px-8 py-3.5 rounded-[5px] text-[12px] font-bold uppercase tracking-widest hover:bg-[#BA7786] transition-all duration-300 transform active:scale-95 shadow-lg">
                 Explore Now
               </button>
             </div>
@@ -121,7 +121,7 @@ const Categories = () => {
         <div className="mb-12">
           <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-[#EDEDED] pb-5 mb-8">
             <h2 className="text-[#212121] text-[1.5rem] font-bold uppercase tracking-tight mb-4 md:mb-0">
-              Browse <span className="text-[#FF8F9C]">Collections</span>
+              Browse <span className="text-[#BA7786]">Collections</span>
             </h2>
             <p className="text-[#787878] text-[13px] font-medium">
               Showing {products.length} Items
@@ -134,7 +134,7 @@ const Categories = () => {
               className={`px-5 py-2.5 rounded-[5px] text-[11px] md:text-[13px] font-bold uppercase tracking-widest transition-all border ${
                 !selectedCategory
                   ? "bg-[#212121] text-white border-[#212121] shadow-md"
-                  : "bg-white text-[#454545] border-[#EDEDED] hover:border-[#FF8F9C] hover:text-[#FF8F9C]"
+                  : "bg-white text-[#454545] border-[#EDEDED] hover:border-[#BA7786] hover:text-[#BA7786]"
               }`}
             >
               All Pieces
@@ -146,8 +146,8 @@ const Categories = () => {
                 onClick={() => handleCategoryClick(cat)}
                 className={`px-5 py-2.5 rounded-[5px] text-[11px] md:text-[13px] font-bold uppercase tracking-widest transition-all border ${
                   selectedCategory === cat
-                    ? "bg-[#FF8F9C] text-white border-[#FF8F9C] shadow-md"
-                    : "bg-white text-[#454545] border-[#EDEDED] hover:border-[#FF8F9C] hover:text-[#FF8F9C]"
+                    ? "bg-[#BA7786] text-white border-[#BA7786] shadow-md"
+                    : "bg-white text-[#454545] border-[#EDEDED] hover:border-[#BA7786] hover:text-[#BA7786]"
                 }`}
               >
                 {cat}
@@ -168,11 +168,11 @@ const Categories = () => {
             ))}
           </div>
         ) : error ? (
-          <div className="text-center py-16 px-6 bg-[#fff1f2] rounded-[15px] border border-[#FF8F9C]/20">
-            <p className="text-[#FF8F9C] font-bold text-lg mb-4">{error}</p>
+          <div className="text-center py-16 px-6 bg-[#fff1f2] rounded-[15px] border border-[#BA7786]/20">
+            <p className="text-[#BA7786] font-bold text-lg mb-4">{error}</p>
             <button
               onClick={() => fetchProducts(selectedCategory)}
-              className="px-8 py-3 bg-[#212121] text-white rounded-[5px] text-[12px] font-bold uppercase tracking-widest hover:bg-[#FF8F9C] transition-all"
+              className="px-8 py-3 bg-[#212121] text-white rounded-[5px] text-[12px] font-bold uppercase tracking-widest hover:bg-[#BA7786] transition-all"
             >
               Try Again
             </button>
@@ -198,7 +198,7 @@ const Categories = () => {
 
         {/* --- ADMIN BANNER --- */}
         {user?.role === "admin" && (
-          <div className="mt-24 p-8 bg-[#212121] rounded-[15px] flex flex-col md:flex-row items-center justify-between gap-6 border-l-[6px] border-[#FF8F9C] shadow-2xl">
+          <div className="mt-24 p-8 bg-[#212121] rounded-[15px] flex flex-col md:flex-row items-center justify-between gap-6 border-l-[6px] border-[#BA7786] shadow-2xl">
             <div className="text-center md:text-left">
               <p className="text-white font-bold text-[18px] tracking-tight uppercase">
                 Admin Catalog View
@@ -208,7 +208,7 @@ const Categories = () => {
                 privileges.
               </p>
             </div>
-            <button className="w-full md:w-auto px-10 py-3.5 bg-[#FF8F9C] text-white rounded-[5px] text-[12px] font-bold uppercase tracking-widest hover:bg-white hover:text-[#212121] transition-all duration-300">
+            <button className="w-full md:w-auto px-10 py-3.5 bg-[#BA7786] text-white rounded-[5px] text-[12px] font-bold uppercase tracking-widest hover:bg-white hover:text-[#212121] transition-all duration-300">
               Manage Products
             </button>
           </div>

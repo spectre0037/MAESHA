@@ -28,7 +28,7 @@ const HelpCenter = () => {
       <section className="bg-[#212121] py-16 md:py-24 px-4 text-center">
         <div className="max-w-[700px] mx-auto">
           <h1 className="text-white text-[28px] md:text-[42px] font-bold uppercase tracking-[0.2em] mb-6">
-            HOW CAN WE <span className="text-[#FF8F9C]">HELP?</span>
+            HOW CAN WE <span className="text-[#BA7786]">HELP?</span>
           </h1>
         </div>
       </section>
@@ -40,9 +40,9 @@ const HelpCenter = () => {
           {categories.map((cat) => (
             <div 
               key={cat.id} 
-              className="bg-white p-8 rounded-[15px] border border-[#EDEDED] shadow-sm hover:border-[#FF8F9C] hover:-translate-y-1 transition-all duration-300 group cursor-pointer"
+              className="bg-white p-8 rounded-[15px] border border-[#EDEDED] shadow-sm hover:border-[#BA7786] hover:-translate-y-1 transition-all duration-300 group cursor-pointer"
             >
-              <div className="text-[28px] text-[#212121] group-hover:text-[#FF8F9C] transition-colors mb-4">
+              <div className="text-[28px] text-[#212121] group-hover:text-[#BA7786] transition-colors mb-4">
                 {cat.icon}
               </div>
               <h3 className="text-[#212121] font-bold uppercase text-[14px] tracking-widest mb-2">{cat.title}</h3>
@@ -56,7 +56,7 @@ const HelpCenter = () => {
           {/* --- POPULAR ARTICLES --- */}
           <div className="lg:col-span-2 space-y-6">
             <h2 className="text-[#212121] text-[18px] font-bold uppercase tracking-widest flex items-center gap-3">
-              <FaQuestionCircle className="text-[#FF8F9C]" /> Popular Articles
+              <FaQuestionCircle className="text-[#BA7786]" /> Popular Articles
             </h2>
             <div className="bg-white rounded-[15px] border border-[#EDEDED] overflow-hidden">
               {popularFaqs.map((faq, index) => (
@@ -65,7 +65,7 @@ const HelpCenter = () => {
                   className="p-5 border-b border-[#EDEDED] last:border-none flex items-center justify-between hover:bg-[#FAFAFA] cursor-pointer group transition-colors"
                 >
                   <span className="text-[#454545] text-[14px] font-medium group-hover:text-[#212121]">{faq}</span>
-                  <FaChevronRight className="text-[#EDEDED] group-hover:text-[#FF8F9C] text-[12px]" />
+                  <FaChevronRight className="text-[#EDEDED] group-hover:text-[#BA7786] text-[12px]" />
                 </div>
               ))}
             </div>
@@ -79,7 +79,7 @@ const HelpCenter = () => {
               Our premium support team is available 24/7 to assist with your inquiries.
             </p>
             <div className="space-y-4">
-              <button className="w-full bg-[#FF8F9C] text-white py-4 rounded-[8px] font-bold uppercase text-[11px] tracking-widest hover:bg-white hover:text-[#212121] transition-all">
+              <button className="w-full bg-[#BA7786] text-white py-4 rounded-[8px] font-bold uppercase text-[11px] tracking-widest hover:bg-white hover:text-[#212121] transition-all">
                 Live Chat
               </button>
               <button className="w-full bg-transparent border border-white/20 text-white py-4 rounded-[8px] font-bold uppercase text-[11px] tracking-widest hover:bg-white/10 transition-all">

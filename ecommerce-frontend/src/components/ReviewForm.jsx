@@ -33,7 +33,7 @@ const ReviewForm = ({ productId, onReviewAdded }) => {
       {/* Header */}
       <div className="mb-6">
         <h3 className="text-[18px] md:text-[20px] font-bold text-[#212121] uppercase tracking-widest">
-          Share Your <span className="text-[#FF8F9C]">Experience</span>
+          Share Your <span className="text-[#BA7786]">Experience</span>
         </h3>
         <div className="w-10 h-[2px] bg-[#212121] mt-2"></div>
       </div>
@@ -53,7 +53,7 @@ const ReviewForm = ({ productId, onReviewAdded }) => {
                 className={`cursor-pointer transition-all duration-200 transform ${
                   isActive ? "scale-110" : "scale-100"
                 }`}
-                color={isActive ? "#FF8F9C" : "#EDEDED"}
+                color={isActive ? "#BA7786" : "#EDEDED"}
                 size={window.innerWidth < 768 ? 24 : 28}
                 onClick={() => setRating(ratingValue)}
                 onMouseEnter={() => setHover(ratingValue)}
@@ -70,7 +70,7 @@ const ReviewForm = ({ productId, onReviewAdded }) => {
           Your Comments
         </label>
         <textarea
-          className="w-full p-4 md:p-5 rounded-[12px] border border-[#EDEDED] outline-none focus:border-[#FF8F9C] focus:ring-1 focus:ring-[#FF8F9C] transition-all text-[14px] text-[#454545] bg-[#F9F9F9] focus:bg-white min-h-[120px] md:min-h-[150px] resize-none"
+          className="w-full p-4 md:p-5 rounded-[12px] border border-[#EDEDED] outline-none focus:border-[#BA7786] focus:ring-1 focus:ring-[#BA7786] transition-all text-[14px] text-[#454545] bg-[#F9F9F9] focus:bg-white min-h-[120px] md:min-h-[150px] resize-none"
           placeholder="What did you like or dislike? Your feedback helps the collection grow..."
           value={comment}
           onChange={(e) => setComment(e.target.value)}
@@ -82,7 +82,7 @@ const ReviewForm = ({ productId, onReviewAdded }) => {
       <button
         type="submit"
         disabled={isSubmitting || rating === 0}
-        className="w-full md:w-auto flex items-center justify-center gap-3 bg-[#212121] text-white px-10 py-4 rounded-[10px] font-bold uppercase text-[11px] tracking-[0.2em] hover:bg-[#FF8F9C] active:scale-95 transition-all duration-300 disabled:bg-[#EDEDED] disabled:cursor-not-allowed shadow-sm"
+        className="w-full md:w-auto flex items-center justify-center gap-3 bg-[#212121] text-white px-10 py-4 rounded-[10px] font-bold uppercase text-[11px] tracking-[0.2em] hover:bg-[#BA7786] active:scale-95 transition-all duration-300 disabled:bg-[#EDEDED] disabled:cursor-not-allowed shadow-sm"
       >
         {isSubmitting ? (
           "Sending..."

@@ -77,13 +77,13 @@ const Navbar = () => {
                 <input
                   type="text"
                   placeholder="What are you looking for?..."
-                  className="w-full border border-[#EDEDED] text-[#454545] text-[14px] rounded-full py-2.5 px-6 outline-none focus:border-[#FF8F9C] transition-all"
+                  className="w-full border border-[#EDEDED] text-[#454545] text-[14px] rounded-full py-2.5 px-6 outline-none focus:border-[#BA7786] transition-all"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                 />
                 <button
                   type="submit"
-                  className="absolute right-4 top-1/2 -translate-y-1/2 text-[#787878] hover:text-[#FF8F9C]"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-[#787878] hover:text-[#BA7786]"
                 >
                   <FaSearch size={16} />
                 </button>
@@ -101,7 +101,7 @@ const Navbar = () => {
               {user?.role === "admin" && (
                 <Link
                   to="/admin"
-                  className="hidden lg:flex items-center gap-2 text-[#212121] hover:text-[#FF8F9C] text-[13px] font-bold uppercase tracking-widest transition-all"
+                  className="hidden lg:flex items-center gap-2 text-[#212121] hover:text-[#BA7786] text-[13px] font-bold uppercase tracking-widest transition-all"
                 >
                   <FaShieldAlt /> ADMIN PANEL
                 </Link>
@@ -138,10 +138,10 @@ const Navbar = () => {
               {user?.role === "customer" && (
                 <Link
                   to="/wishlist"
-                  className="relative text-[#212121] hover:text-[#FF8F9C] p-2"
+                  className="relative text-[#212121] hover:text-[#BA7786] p-2"
                 >
                   <FaHeart size={22} />
-                  <span className="absolute top-1 right-1 bg-[#FF8F9C] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">
+                  <span className="absolute top-1 right-1 bg-[#BA7786] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">
                     {wishlistCount}
                   </span>
                 </Link>
@@ -151,10 +151,10 @@ const Navbar = () => {
               {user?.role === "customer" && (
                 <Link
                   to="/cart"
-                  className="relative text-[#212121] hover:text-[#FF8F9C] p-2"
+                  className="relative text-[#212121] hover:text-[#BA7786] p-2"
                 >
                   <FaShoppingCart size={22} />
-                  <span className="absolute top-1 right-1 bg-[#FF8F9C] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">
+                  <span className="absolute top-1 right-1 bg-[#BA7786] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">
                     {cartCount}
                   </span>
                 </Link>
@@ -244,7 +244,7 @@ const Navbar = () => {
               <Link
                 to="/admin"
                 onClick={closeMenu}
-                className="text-[#FF8F9C] font-bold uppercase text-sm tracking-widest flex items-center gap-2"
+                className="text-[#BA7786] font-bold uppercase text-sm tracking-widest flex items-center gap-2"
               >
                 <FaShieldAlt /> Admin Dashboard
               </Link>
@@ -295,8 +295,8 @@ const Navbar = () => {
 
 const MenuLinks = ({ location, user, mobile, onClick }) => {
   const baseClass = mobile
-    ? "text-[#212121] text-[16px] font-bold uppercase tracking-wide hover:text-[#FF8F9C]"
-    : "text-[#212121] text-[15px] font-semibold uppercase hover:text-[#FF8F9C] transition-colors";
+    ? "text-[#212121] text-[16px] font-bold uppercase tracking-wide hover:text-[#BA7786]"
+    : "text-[#212121] text-[15px] font-semibold uppercase hover:text-[#BA7786] transition-colors";
 
   return (
     <>
@@ -304,7 +304,7 @@ const MenuLinks = ({ location, user, mobile, onClick }) => {
         to="/"
         onClick={onClick}
         className={`${baseClass} ${
-          location.pathname === "/" ? "text-[#FF8F9C]" : ""
+          location.pathname === "/" ? "text-[#BA7786]" : ""
         }`}
       >
         Home
@@ -313,7 +313,7 @@ const MenuLinks = ({ location, user, mobile, onClick }) => {
         to="/categories"
         onClick={onClick}
         className={`${baseClass} ${
-          location.pathname === "/categories" ? "text-[#FF8F9C]" : ""
+          location.pathname === "/categories" ? "text-[#BA7786]" : ""
         }`}
       >
         Categories
@@ -323,7 +323,7 @@ const MenuLinks = ({ location, user, mobile, onClick }) => {
           to="/order-history"
           onClick={onClick}
           className={`${baseClass} ${
-            location.pathname === "/order-history" ? "text-[#FF8F9C]" : ""
+            location.pathname === "/order-history" ? "text-[#BA7786]" : ""
           }`}
         >
           Order History
@@ -337,7 +337,7 @@ const BottomTab = ({ to, icon, label, active, badge }) => (
   <Link
     to={to}
     className={`flex flex-col items-center gap-1 relative ${
-      active ? "text-[#FF8F9C]" : "text-[#787878]"
+      active ? "text-[#BA7786]" : "text-[#787878]"
     }`}
   >
     {icon}
@@ -345,7 +345,7 @@ const BottomTab = ({ to, icon, label, active, badge }) => (
       {label}
     </span>
     {badge > 0 && (
-      <span className="absolute -top-1 -right-1 bg-[#FF8F9C] text-white text-[9px] font-bold w-4 h-4 flex items-center justify-center rounded-full">
+      <span className="absolute -top-1 -right-1 bg-[#BA7786] text-white text-[9px] font-bold w-4 h-4 flex items-center justify-center rounded-full">
         {badge}
       </span>
     )}

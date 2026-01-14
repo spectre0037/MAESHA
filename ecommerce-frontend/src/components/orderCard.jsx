@@ -73,7 +73,7 @@ const OrderCard = ({ order, onRefresh, onViewDetails }) => {
 
   return (
     <div
-      className={`bg-white border border-[#EDEDED] rounded-[10px] p-6 transition-all duration-300 hover:shadow-md hover:border-[#FF8F9C]/30 group font-['Poppins'] ${
+      className={`bg-white border border-[#EDEDED] rounded-[10px] p-6 transition-all duration-300 hover:shadow-md hover:border-[#BA7786]/30 group font-['Poppins'] ${
         isUpdating ? "opacity-50 pointer-events-none" : ""
       }`}
     >
@@ -131,7 +131,7 @@ const OrderCard = ({ order, onRefresh, onViewDetails }) => {
             <p className="text-[10px] font-bold text-[#787878] uppercase tracking-widest mb-1">
               Total Amount
             </p>
-            <p className="text-[28px] font-bold text-[#FF8F9C] tracking-tighter leading-none">
+            <p className="text-[28px] font-bold text-[#BA7786] tracking-tighter leading-none">
               ${Number(order.total_amount || order.total_price).toFixed(2)}
             </p>
           </div>
@@ -140,7 +140,7 @@ const OrderCard = ({ order, onRefresh, onViewDetails }) => {
             {/* View Details */}
             <button
               onClick={() => onViewDetails(order)}
-              className="flex items-center gap-2 px-4 py-2.5 bg-[#212121] text-white text-[10px] font-bold uppercase tracking-widest rounded-[5px] hover:bg-[#FF8F9C] transition-all shadow-sm active:scale-95"
+              className="flex items-center gap-2 px-4 py-2.5 bg-[#212121] text-white text-[10px] font-bold uppercase tracking-widest rounded-[5px] hover:bg-[#BA7786] transition-all shadow-sm active:scale-95"
             >
               <FaEye size={12} /> Manage
             </button>
@@ -148,7 +148,7 @@ const OrderCard = ({ order, onRefresh, onViewDetails }) => {
             {/* Quick Status Select */}
             <div className="relative group/select">
               <select
-                className="bg-[#F7F7F7] border border-[#EDEDED] text-[10px] font-bold uppercase tracking-widest rounded-[5px] pl-3 pr-8 py-2.5 focus:border-[#FF8F9C] outline-none cursor-pointer appearance-none hover:bg-white transition-colors"
+                className="bg-[#F7F7F7] border border-[#EDEDED] text-[10px] font-bold uppercase tracking-widest rounded-[5px] pl-3 pr-8 py-2.5 focus:border-[#BA7786] outline-none cursor-pointer appearance-none hover:bg-white transition-colors"
                 value={order.status}
                 onChange={(e) => handleStatusChange(e.target.value)}
               >
@@ -167,7 +167,7 @@ const OrderCard = ({ order, onRefresh, onViewDetails }) => {
             {/* Delete Button */}
             <button
               onClick={handleDelete}
-              className="p-2.5 text-[#EDEDED] hover:text-[#FF8F9C] hover:bg-red-50 rounded-[5px] transition-all"
+              className="p-2.5 text-[#EDEDED] hover:text-[#BA7786] hover:bg-red-50 rounded-[5px] transition-all"
               title="Delete Record"
             >
               <FaTrash size={14} />

@@ -13,7 +13,7 @@ const Wishlist = () => {
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 border-b border-[#EDEDED] pb-8">
         <div>
           <h1 className="text-[28px] font-bold text-[#212121] uppercase tracking-tight">
-            My <span className="text-[#FF8F9C]">Wishlist</span>
+            My <span className="text-[#BA7786]">Wishlist</span>
           </h1>
           <p className="text-[#787878] text-[14px] mt-1">
             You have {items.length} premium{" "}
@@ -22,7 +22,7 @@ const Wishlist = () => {
         </div>
         <Link
           to="/categories"
-          className="text-[12px] font-bold text-[#212121] uppercase tracking-widest hover:text-[#FF8F9C] transition-colors border-b-2 border-[#FF8F9C] pb-1"
+          className="text-[12px] font-bold text-[#212121] uppercase tracking-widest hover:text-[#BA7786] transition-colors border-b-2 border-[#BA7786] pb-1"
         >
           Continue Shopping
         </Link>
@@ -42,7 +42,7 @@ const Wishlist = () => {
           </p>
           <Link
             to="/categories"
-            className="bg-[#212121] text-white px-10 py-3 rounded-[5px] font-bold uppercase text-[12px] tracking-widest hover:bg-[#FF8F9C] transition-all shadow-sm"
+            className="bg-[#212121] text-white px-10 py-3 rounded-[5px] font-bold uppercase text-[12px] tracking-widest hover:bg-[#BA7786] transition-all shadow-sm"
           >
             Discover Products
           </Link>

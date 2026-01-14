@@ -11,9 +11,9 @@ const PrivacyPolicy = () => {
         {/* Header Section */}
         <div className="bg-[#212121] p-10 md:p-16 text-center">
           <h1 className="text-white text-[28px] md:text-[40px] font-bold uppercase tracking-[0.2em] mb-4">
-            Privacy <span className="text-[#FF8F9C]">Policy</span>
+            Privacy <span className="text-[#BA7786]">Policy</span>
           </h1>
-          <div className="w-16 h-[2px] bg-[#FF8F9C] mx-auto mb-6"></div>
+          <div className="w-16 h-[2px] bg-[#BA7786] mx-auto mb-6"></div>
           <p className="text-[#787878] text-[13px] md:text-[14px] uppercase tracking-widest">
             Last Updated: {lastUpdated}
           </p>
@@ -22,17 +22,17 @@ const PrivacyPolicy = () => {
         {/* Quick Summary Cards (Responsive Grid) */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-6 md:p-10 border-b border-[#EDEDED] bg-[#FAFAFA]">
           <SummaryCard 
-            icon={<FaLock className="text-[#FF8F9C]" />} 
+            icon={<FaLock className="text-[#BA7786]" />} 
             title="Secure" 
             desc="We use industry-standard encryption to protect your data."
           />
           <SummaryCard 
-            icon={<FaEye className="text-[#FF8F9C]" />} 
+            icon={<FaEye className="text-[#BA7786]" />} 
             title="Transparent" 
             desc="We never sell your personal information to third parties."
           />
           <SummaryCard 
-            icon={<FaUserShield className="text-[#FF8F9C]" />} 
+            icon={<FaUserShield className="text-[#BA7786]" />} 
             title="Your Control" 
             desc="You have the right to access or delete your data anytime."
           />
@@ -43,7 +43,7 @@ const PrivacyPolicy = () => {
           
           <section>
             <h2 className="text-[#212121] text-[18px] font-bold uppercase tracking-wider mb-4 flex items-center gap-3">
-              <span className="w-2 h-6 bg-[#FF8F9C] block"></span> 1. Information We Collect
+              <span className="w-2 h-6 bg-[#BA7786] block"></span> 1. Information We Collect
             </h2>
             <p className="mb-4">
               When you join <span className="font-bold">ANON</span>, we collect information necessary to provide our premium services. This includes:
@@ -57,7 +57,7 @@ const PrivacyPolicy = () => {
 
           <section>
             <h2 className="text-[#212121] text-[18px] font-bold uppercase tracking-wider mb-4 flex items-center gap-3">
-              <span className="w-2 h-6 bg-[#FF8F9C] block"></span> 2. How We Use Your Data
+              <span className="w-2 h-6 bg-[#BA7786] block"></span> 2. How We Use Your Data
             </h2>
             <p>
               Your data is used to process orders, personalize your shopping experience, and communicate important updates regarding your account. We may also use data to improve our website functionality and detect fraudulent activity.
@@ -66,7 +66,7 @@ const PrivacyPolicy = () => {
 
           <section>
             <h2 className="text-[#212121] text-[18px] font-bold uppercase tracking-wider mb-4 flex items-center gap-3">
-              <span className="w-2 h-6 bg-[#FF8F9C] block"></span> 3. Data Retention
+              <span className="w-2 h-6 bg-[#BA7786] block"></span> 3. Data Retention
             </h2>
             <p>
               We keep your information only as long as necessary to fulfill the purposes outlined in this policy, unless a longer retention period is required by law.
@@ -95,7 +95,7 @@ const PrivacyPolicy = () => {
             </p>
             <a 
               href="mailto:support@anon.com" 
-              className="inline-block bg-[#212121] text-white px-10 py-4 rounded-[5px] font-bold uppercase text-[12px] tracking-widest hover:bg-[#FF8F9C] transition-all shadow-md"
+              className="inline-block bg-[#212121] text-white px-10 py-4 rounded-[5px] font-bold uppercase text-[12px] tracking-widest hover:bg-[#BA7786] transition-all shadow-md"
             >
               Contact Support
             </a>

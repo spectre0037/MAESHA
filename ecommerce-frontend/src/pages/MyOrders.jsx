@@ -11,15 +11,15 @@ const MyOrders = () => {
         
         {/* Success Icon Section */}
         <div className="relative inline-block mb-8">
-          <div className="absolute inset-0 bg-[#FF8F9C] opacity-20 rounded-full animate-ping"></div>
-          <div className="relative bg-white text-[#FF8F9C] p-4 rounded-full border-2 border-[#FF8F9C]">
+          <div className="absolute inset-0 bg-[#BA7786] opacity-20 rounded-full animate-ping"></div>
+          <div className="relative bg-white text-[#BA7786] p-4 rounded-full border-2 border-[#BA7786]">
             <FaCheckCircle size={48} />
           </div>
         </div>
 
         {/* Content Section */}
         <h1 className="text-[28px] font-bold text-[#212121] uppercase tracking-tight mb-4">
-          Order <span className="text-[#FF8F9C]">Confirmed</span>
+          Order <span className="text-[#BA7786]">Confirmed</span>
         </h1>
         
         <div className="w-16 h-[2px] bg-[#212121] mx-auto mb-6"></div>
@@ -33,7 +33,7 @@ const MyOrders = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link 
             to="/" 
-            className="flex items-center justify-center gap-2 bg-[#212121] text-white px-8 py-3 rounded-[5px] font-bold text-[12px] uppercase tracking-widest hover:bg-[#FF8F9C] transition-all duration-300 shadow-sm"
+            className="flex items-center justify-center gap-2 bg-[#212121] text-white px-8 py-3 rounded-[5px] font-bold text-[12px] uppercase tracking-widest hover:bg-[#BA7786] transition-all duration-300 shadow-sm"
           >
             <FaShoppingBag size={14} /> Continue Shopping
           </Link>
@@ -48,7 +48,7 @@ const MyOrders = () => {
 
         {/* Support Link */}
         <p className="mt-10 text-[12px] text-[#787878] font-medium italic">
-          Need help? <Link to="/contact" className="text-[#FF8F9C] hover:underline">Contact our support team</Link>
+          Need help? <Link to="/contact" className="text-[#BA7786] hover:underline">Contact our support team</Link>
         </p>
       </div>
     </div>

@@ -38,7 +38,7 @@ const Login = () => {
         {/* Branding/Header */}
         <div className="text-center mb-8 md:mb-10">
           <h1 className="text-[20px] md:text-[24px] font-bold text-[#212121] uppercase tracking-[0.2em] mb-2">
-            <span className="text-[#FF8F9C]">LOGIN</span>
+            <span className="text-[#BA7786]">LOGIN</span>
           </h1>
           <div className="w-10 md:w-12 h-[2px] bg-[#212121] mx-auto mb-4"></div>
           <p className="text-[#787878] text-[12px] md:text-[13px] font-medium italic px-2">
@@ -48,8 +48,8 @@ const Login = () => {
 
         {/* Error Alert Display with Animation */}
         {error && (
-          <div className="bg-[#fff1f2] border border-[#FF8F9C] p-4 mb-6 rounded-[8px] flex items-center gap-3 animate-bounce-short">
-            <FaExclamationCircle className="text-[#FF8F9C] flex-shrink-0" />
+          <div className="bg-[#fff1f2] border border-[#BA7786] p-4 mb-6 rounded-[8px] flex items-center gap-3 animate-bounce-short">
+            <FaExclamationCircle className="text-[#BA7786] flex-shrink-0" />
             <p className="text-[#212121] text-[11px] md:text-[12px] font-bold uppercase tracking-tight">
               {typeof error === "string"
                 ? error
@@ -61,14 +61,14 @@ const Login = () => {
         <form onSubmit={handleSubmit} className="space-y-5 md:space-y-6">
           {/* Email Field */}
           <div className="space-y-2 group">
-            <label className="text-[10px] md:text-[11px] font-bold text-[#212121] uppercase tracking-widest flex items-center gap-2 transition-colors group-focus-within:text-[#FF8F9C]">
-              <FaEnvelope className="text-[#787878] group-focus-within:text-[#FF8F9C]" />{" "}
+            <label className="text-[10px] md:text-[11px] font-bold text-[#212121] uppercase tracking-widest flex items-center gap-2 transition-colors group-focus-within:text-[#BA7786]">
+              <FaEnvelope className="text-[#787878] group-focus-within:text-[#BA7786]" />{" "}
               Email Address
             </label>
             <input
               type="email"
               placeholder="Enter your email"
-              className="w-full px-4 py-3 border border-[#EDEDED] rounded-[8px] focus:border-[#FF8F9C] focus:ring-1 focus:ring-[#FF8F9C] outline-none transition-all duration-300 text-[14px] text-[#454545] bg-gray-50 focus:bg-white"
+              className="w-full px-4 py-3 border border-[#EDEDED] rounded-[8px] focus:border-[#BA7786] focus:ring-1 focus:ring-[#BA7786] outline-none transition-all duration-300 text-[14px] text-[#454545] bg-gray-50 focus:bg-white"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -78,13 +78,13 @@ const Login = () => {
           {/* Password Field */}
           <div className="space-y-2 group">
             <div className="flex justify-between items-center">
-              <label className="text-[10px] md:text-[11px] font-bold text-[#212121] uppercase tracking-widest flex items-center gap-2 transition-colors group-focus-within:text-[#FF8F9C]">
-                <FaLock className="text-[#787878] group-focus-within:text-[#FF8F9C]" />{" "}
+              <label className="text-[10px] md:text-[11px] font-bold text-[#212121] uppercase tracking-widest flex items-center gap-2 transition-colors group-focus-within:text-[#BA7786]">
+                <FaLock className="text-[#787878] group-focus-within:text-[#BA7786]" />{" "}
                 Password
               </label>
               <Link
                 to="/forgot-password"
-                className="text-[10px] font-bold text-[#787878] hover:text-[#FF8F9C] uppercase tracking-tighter transition-colors"
+                className="text-[10px] font-bold text-[#787878] hover:text-[#BA7786] uppercase tracking-tighter transition-colors"
               >
                 Forgot?
               </Link>
@@ -92,7 +92,7 @@ const Login = () => {
             <input
               type="password"
               placeholder="••••••••"
-              className="w-full px-4 py-3 border border-[#EDEDED] rounded-[8px] focus:border-[#FF8F9C] focus:ring-1 focus:ring-[#FF8F9C] outline-none transition-all duration-300 text-[14px] text-[#454545] bg-gray-50 focus:bg-white"
+              className="w-full px-4 py-3 border border-[#EDEDED] rounded-[8px] focus:border-[#BA7786] focus:ring-1 focus:ring-[#BA7786] outline-none transition-all duration-300 text-[14px] text-[#454545] bg-gray-50 focus:bg-white"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
@@ -102,7 +102,7 @@ const Login = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-[#212121] text-white py-3 md:py-4 rounded-[8px] font-bold uppercase text-[11px] md:text-[12px] tracking-widest hover:bg-[#FF8F9C] active:scale-[0.98] transition-all duration-300 disabled:bg-[#EDEDED] disabled:cursor-not-allowed shadow-md hover:shadow-lg disabled:shadow-none mt-2"
+            className="w-full bg-[#212121] text-white py-3 md:py-4 rounded-[8px] font-bold uppercase text-[11px] md:text-[12px] tracking-widest hover:bg-[#BA7786] active:scale-[0.98] transition-all duration-300 disabled:bg-[#EDEDED] disabled:cursor-not-allowed shadow-md hover:shadow-lg disabled:shadow-none mt-2"
             disabled={loading}
           >
             {loading ? (
@@ -140,7 +140,7 @@ const Login = () => {
             Not a member yet?{" "}
             <Link
               to="/register"
-              className="text-[#212121] font-bold hover:text-[#FF8F9C] transition-colors uppercase tracking-tight ml-1 inline-block"
+              className="text-[#212121] font-bold hover:text-[#BA7786] transition-colors uppercase tracking-tight ml-1 inline-block"
               onClick={() => dispatch(clearError())}
             >
               Join the collection

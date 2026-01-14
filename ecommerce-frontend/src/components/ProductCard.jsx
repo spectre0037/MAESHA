@@ -40,7 +40,7 @@ const ProductCard = ({ product }) => {
         {/* Badges */}
         <div className="absolute top-3 left-3 flex flex-col gap-2">
           {salePrice && (
-            <span className="bg-[#FF8F9C] text-white text-[10px] font-bold uppercase px-2 py-1 rounded-[4px] shadow-sm">
+            <span className="bg-[#BA7786] text-white text-[10px] font-bold uppercase px-2 py-1 rounded-[4px] shadow-sm">
               {discountPercentage}%
             </span>
           )}
@@ -58,7 +58,7 @@ const ProductCard = ({ product }) => {
             className="p-2.5 bg-white border border-[#EDEDED] rounded-[5px] text-[#787878] hover:bg-[#212121] hover:text-white transition-all shadow-sm"
             title="Add to Wishlist"
           >
-            {isLiked ? <FaHeart className="text-[#FF8F9C]" /> : <FaRegHeart />}
+            {isLiked ? <FaHeart className="text-[#BA7786]" /> : <FaRegHeart />}
           </button>
           <Link
             to={`/product/${product.id}`}
@@ -74,12 +74,12 @@ const ProductCard = ({ product }) => {
 
       {/* Content */}
       <div className="p-4 flex flex-col gap-1">
-        <p className="text-[#FF8F9C] text-[11px] font-bold uppercase tracking-wider">
+        <p className="text-[#BA7786] text-[11px] font-bold uppercase tracking-wider">
           {product.category || "Collection"}
         </p>
 
         <Link to={`/product/${product.id}`}>
-          <h3 className="text-[#454545] text-[14px] font-medium line-clamp-1 hover:text-[#FF8F9C] transition-colors capitalize">
+          <h3 className="text-[#454545] text-[14px] font-medium line-clamp-1 hover:text-[#BA7786] transition-colors capitalize">
             {product.name}
           </h3>
         </Link>

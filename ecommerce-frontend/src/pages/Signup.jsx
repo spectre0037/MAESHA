@@ -64,7 +64,7 @@ const Signup = () => {
       <div className="max-w-[480px] w-full bg-white p-6 sm:p-10 md:p-12 rounded-[15px] shadow-lg md:shadow-sm border border-[#EDEDED] transform transition-all duration-700 animate-in fade-in slide-in-from-bottom-6">
         <div className="text-center mb-8">
           <h1 className="text-[20px] md:text-[24px] font-bold text-[#212121] uppercase tracking-[0.2em] mb-2">
-            JOIN <span className="text-[#FF8F9C]">ANON</span>
+            JOIN <span className="text-[#BA7786]">ANON</span>
           </h1>
           <div className="w-12 h-[2px] bg-[#212121] mx-auto mb-4"></div>
           <p className="text-[#787878] text-[12px] md:text-[13px] font-medium italic">
@@ -73,8 +73,8 @@ const Signup = () => {
         </div>
 
         {error && (
-          <div className="bg-[#fff1f2] border border-[#FF8F9C] p-4 mb-6 rounded-[8px] flex items-center gap-3 animate-shake">
-            <FaExclamationCircle className="text-[#FF8F9C] flex-shrink-0" />
+          <div className="bg-[#fff1f2] border border-[#BA7786] p-4 mb-6 rounded-[8px] flex items-center gap-3 animate-shake">
+            <FaExclamationCircle className="text-[#BA7786] flex-shrink-0" />
             <p className="text-[#212121] text-[11px] md:text-[12px] font-bold uppercase tracking-tight">
               {error.message || error}
             </p>
@@ -85,9 +85,9 @@ const Signup = () => {
           {/* Name & Email Fields */}
           <div className="space-y-4">
             <div className="space-y-1.5 group">
-              <label className="text-[10px] md:text-[11px] font-bold text-[#212121] uppercase tracking-widest flex items-center gap-2 group-focus-within:text-[#FF8F9C] transition-colors">
+              <label className="text-[10px] md:text-[11px] font-bold text-[#212121] uppercase tracking-widest flex items-center gap-2 group-focus-within:text-[#BA7786] transition-colors">
                 <FaUser
-                  className="text-[#787878] group-focus-within:text-[#FF8F9C]"
+                  className="text-[#787878] group-focus-within:text-[#BA7786]"
                   size={12}
                 />{" "}
                 Full Name
@@ -96,7 +96,7 @@ const Signup = () => {
                 name="name"
                 type="text"
                 placeholder="John Doe"
-                className="w-full px-4 py-3 border border-[#EDEDED] rounded-[8px] focus:border-[#FF8F9C] focus:ring-1 focus:ring-[#FF8F9C] outline-none transition-all duration-300 text-[14px] text-[#454545] bg-gray-50 focus:bg-white"
+                className="w-full px-4 py-3 border border-[#EDEDED] rounded-[8px] focus:border-[#BA7786] focus:ring-1 focus:ring-[#BA7786] outline-none transition-all duration-300 text-[14px] text-[#454545] bg-gray-50 focus:bg-white"
                 value={formData.name}
                 onChange={handleChange}
                 required
@@ -104,9 +104,9 @@ const Signup = () => {
             </div>
 
             <div className="space-y-1.5 group">
-              <label className="text-[10px] md:text-[11px] font-bold text-[#212121] uppercase tracking-widest flex items-center gap-2 group-focus-within:text-[#FF8F9C] transition-colors">
+              <label className="text-[10px] md:text-[11px] font-bold text-[#212121] uppercase tracking-widest flex items-center gap-2 group-focus-within:text-[#BA7786] transition-colors">
                 <FaEnvelope
-                  className="text-[#787878] group-focus-within:text-[#FF8F9C]"
+                  className="text-[#787878] group-focus-within:text-[#BA7786]"
                   size={12}
                 />{" "}
                 Email
@@ -115,7 +115,7 @@ const Signup = () => {
                 name="email"
                 type="email"
                 placeholder="name@example.com"
-                className="w-full px-4 py-3 border border-[#EDEDED] rounded-[8px] focus:border-[#FF8F9C] focus:ring-1 focus:ring-[#FF8F9C] outline-none transition-all duration-300 text-[14px] text-[#454545] bg-gray-50 focus:bg-white"
+                className="w-full px-4 py-3 border border-[#EDEDED] rounded-[8px] focus:border-[#BA7786] focus:ring-1 focus:ring-[#BA7786] outline-none transition-all duration-300 text-[14px] text-[#454545] bg-gray-50 focus:bg-white"
                 value={formData.email}
                 onChange={handleChange}
                 required
@@ -125,9 +125,9 @@ const Signup = () => {
 
           {/* Enhanced Password Field */}
           <div className="space-y-1.5 md:space-y-2 group">
-            <label className="text-[10px] md:text-[11px] font-bold text-[#212121] uppercase tracking-widest flex items-center gap-2 group-focus-within:text-[#FF8F9C] transition-colors">
+            <label className="text-[10px] md:text-[11px] font-bold text-[#212121] uppercase tracking-widest flex items-center gap-2 group-focus-within:text-[#BA7786] transition-colors">
               <FaLock
-                className="text-[#787878] group-focus-within:text-[#FF8F9C]"
+                className="text-[#787878] group-focus-within:text-[#BA7786]"
                 size={12}
               />{" "}
               Password
@@ -139,7 +139,7 @@ const Signup = () => {
               className={`w-full px-4 py-3 border rounded-[8px] outline-none transition-all duration-300 text-[14px] text-[#454545] bg-gray-50 focus:bg-white ${
                 formData.password && !isPasswordStrong
                   ? "border-orange-300"
-                  : "border-[#EDEDED] focus:border-[#FF8F9C]"
+                  : "border-[#EDEDED] focus:border-[#BA7786]"
               }`}
               value={formData.password}
               onChange={handleChange}
@@ -160,7 +160,7 @@ const Signup = () => {
                           ? "bg-red-400"
                           : level === 2
                           ? "bg-orange-400"
-                          : "bg-[#FF8F9C]"
+                          : "bg-[#BA7786]"
                         : "bg-[#EDEDED]"
                     }`}
                   ></div>
@@ -187,7 +187,7 @@ const Signup = () => {
 
           <button
             type="submit"
-            className="w-full bg-[#212121] text-white py-3.5 md:py-4 rounded-[8px] font-bold uppercase text-[11px] md:text-[12px] tracking-widest hover:bg-[#FF8F9C] active:scale-[0.98] transition-all duration-300 disabled:bg-[#EDEDED] disabled:cursor-not-allowed shadow-md hover:shadow-lg mt-6"
+            className="w-full bg-[#212121] text-white py-3.5 md:py-4 rounded-[8px] font-bold uppercase text-[11px] md:text-[12px] tracking-widest hover:bg-[#BA7786] active:scale-[0.98] transition-all duration-300 disabled:bg-[#EDEDED] disabled:cursor-not-allowed shadow-md hover:shadow-lg mt-6"
             disabled={loading || !isPasswordStrong}
           >
             {loading ? "Processing..." : "Create Account"}
@@ -199,7 +199,7 @@ const Signup = () => {
             Already a member?{" "}
             <Link
               to="/login"
-              className="text-[#212121] font-bold hover:text-[#FF8F9C] transition-colors ml-1 inline-block uppercase tracking-tight"
+              className="text-[#212121] font-bold hover:text-[#BA7786] transition-colors ml-1 inline-block uppercase tracking-tight"
             >
               Sign In Here
             </Link>
@@ -218,7 +218,7 @@ const ValidationItem = ({ isMet, label }) => (
     }`}
   >
     {isMet ? (
-      <FaCheckCircle className="text-[#FF8F9C] animate-in zoom-in" size={12} />
+      <FaCheckCircle className="text-[#BA7786] animate-in zoom-in" size={12} />
     ) : (
       <FaCircle className="opacity-20" size={8} />
     )}
