@@ -94,9 +94,9 @@ const Footer = () => {
           <motion.div variants={itemVariants} className="space-y-6">
             <h4 className="text-[12px] font-bold uppercase tracking-[0.2em] text-[#FF8F9C]">Connect</h4>
             <div className="space-y-4">
-              <ContactItem icon={<FaMapMarkerAlt />} text="22nd Fashion Ave, New York" />
-              <ContactItem icon={<FaPhoneAlt />} text="+1 (234) 567-890" />
-              <ContactItem icon={<FaEnvelope />} text="support@anon.com" />
+              <ContactItem icon={<FaMapMarkerAlt />} text="Lahore ,Pakistan" />
+              <ContactItem icon={<FaPhoneAlt />} text="+92 303-6119780 | +92 319-3669421" />
+              <ContactItem icon={<FaEnvelope />} text="maeshamadeofficial@gmail.com" />
             </div>
           </motion.div>
         </div>
@@ -106,11 +106,6 @@ const Footer = () => {
           <p className="text-gray-500 text-[11px] uppercase tracking-widest">
             © 2026 MAESHA. ALL RIGHTS RESERVED.
           </p>
-          <div className="flex gap-8">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" className="h-4 opacity-30 grayscale hover:grayscale-0 transition-all" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" className="h-4 opacity-30 grayscale hover:grayscale-0 transition-all" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" className="h-4 opacity-30 grayscale hover:grayscale-0 transition-all" />
-          </div>
         </div>
       </div>
     </motion.footer>
