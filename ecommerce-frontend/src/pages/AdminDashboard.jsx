@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import API from "../api";
 
 // Components
-import OrderCard from "../components/OrderCard";
+import OrderCard from "../components/orderCard";
 import EditProductModal from "../components/EditProductModal";
 import OrderDetailsModal from "../components/OrderdetailsModal";
 import AddProductModal from "../components/AddProductModal";
