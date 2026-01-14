@@ -248,15 +248,15 @@ const Home = () => {
                       {isOnSale ? (
                         <>
                           <span className="text-[#212121] font-bold text-[15px]">
-                            ${Number(product.discount_price).toFixed(2)}
+                            {Number(product.discount_price).toFixed(2)} PKR
                           </span>
                           <del className="text-[#787878] text-[12px]">
-                            ${Number(product.price).toFixed(2)}
+                            {Number(product.price).toFixed(2)} PKR
                           </del>
                         </>
                       ) : (
                         <span className="text-[#212121] font-bold text-[15px]">
-                          ${Number(product.price).toFixed(2)}
+                          {Number(product.price).toFixed(2)} PKR
                         </span>
                       )}
                     </div>

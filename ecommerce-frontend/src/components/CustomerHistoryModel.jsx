@@ -57,7 +57,7 @@ const CustomerHistoryModal = ({ customer, onClose }) => {
           />
           <StatBox 
             label="Lifetime Value" 
-            value={`$${totalSpent.toFixed(2)}`} 
+            value={`${totalSpent.toFixed(2)} PKR`} 
             icon={<FaWallet />} 
             color="bg-[#BA7786]" 
           />
@@ -105,7 +105,7 @@ const CustomerHistoryModal = ({ customer, onClose }) => {
                   
                   <div className="mt-4 md:mt-0 text-left md:text-right">
                     <p className="font-bold text-[#212121] text-[18px] tracking-tight">
-                      ${Number(order.total_amount).toFixed(2)}
+                      {Number(order.total_amount).toFixed(2)} PKR
                     </p>
                     <p className="text-[10px] text-[#BA7786] font-bold uppercase tracking-tighter">
                       Verified Transaction

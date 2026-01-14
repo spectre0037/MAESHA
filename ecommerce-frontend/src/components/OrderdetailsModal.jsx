@@ -156,10 +156,10 @@ const OrderDetailsModal = ({ order, onClose }) => {
                       {item.quantity}
                     </td>
                     <td className="py-5 text-right text-[#454545] text-[14px]">
-                      ${Number(item.price_at_purchase).toFixed(2)}
+                      {Number(item.price_at_purchase).toFixed(2)} PKR
                     </td>
                     <td className="py-5 text-right font-bold text-[#212121] text-[14px]">
-                      ${(item.quantity * item.price_at_purchase).toFixed(2)}
+                      {(item.quantity * item.price_at_purchase).toFixed(2)} PKR
                     </td>
                     <td className="py-5 text-center no-print">
                       {order.status?.toLowerCase() === "delivered" ? (
@@ -195,7 +195,7 @@ const OrderDetailsModal = ({ order, onClose }) => {
                   Total Amount
                 </span>
                 <span className="text-[24px] font-bold text-[#BA7786]">
-                  ${Number(order.total_amount).toFixed(2)}
+                  {Number(order.total_amount).toFixed(2)} PKR
                 </span>
               </div>
             </div>

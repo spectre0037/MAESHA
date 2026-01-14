@@ -132,7 +132,7 @@ const OrderCard = ({ order, onRefresh, onViewDetails }) => {
               Total Amount
             </p>
             <p className="text-[28px] font-bold text-[#BA7786] tracking-tighter leading-none">
-              ${Number(order.total_amount || order.total_price).toFixed(2)}
+              {Number(order.total_amount || order.total_price).toFixed(2)} PKR
             </p>
           </div>
 

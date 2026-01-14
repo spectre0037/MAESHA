@@ -110,7 +110,7 @@ const EditProductModal = ({ product, onClose, onRefresh }) => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label className="text-[11px] font-bold text-[#212121] uppercase tracking-widest block mb-2">
-                  Base Price ($)
+                  Base Price (PKR)
                 </label>
                 <input
                   required
@@ -125,7 +125,7 @@ const EditProductModal = ({ product, onClose, onRefresh }) => {
               </div>
               <div>
                 <label className="text-[11px] font-bold text-[#BA7786] uppercase tracking-widest block mb-2 flex items-center gap-1">
-                  <FaTag size={10} /> Discount Price ($)
+                  <FaTag size={10} /> Discount Price (PKR)
                 </label>
                 <input
                   type="number"

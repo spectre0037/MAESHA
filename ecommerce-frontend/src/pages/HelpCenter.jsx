@@ -14,12 +14,6 @@ const HelpCenter = () => {
     { id: 4, icon: <FaCreditCard />, title: "Payment", desc: "Secure checkout and payment methods." },
   ];
 
-  const popularFaqs = [
-    "How do I track my order?",
-    "What is the ANON return policy?",
-    "How do I change my shipping address?",
-    "Do you ship internationally?",
-  ];
 
   return (
     <div className="bg-[#F7F7F7] min-h-screen font-['Poppins']">
@@ -54,22 +48,6 @@ const HelpCenter = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
           
           {/* --- POPULAR ARTICLES --- */}
-          <div className="lg:col-span-2 space-y-6">
-            <h2 className="text-[#212121] text-[18px] font-bold uppercase tracking-widest flex items-center gap-3">
-              <FaQuestionCircle className="text-[#BA7786]" /> Popular Articles
-            </h2>
-            <div className="bg-white rounded-[15px] border border-[#EDEDED] overflow-hidden">
-              {popularFaqs.map((faq, index) => (
-                <div 
-                  key={index}
-                  className="p-5 border-b border-[#EDEDED] last:border-none flex items-center justify-between hover:bg-[#FAFAFA] cursor-pointer group transition-colors"
-                >
-                  <span className="text-[#454545] text-[14px] font-medium group-hover:text-[#212121]">{faq}</span>
-                  <FaChevronRight className="text-[#EDEDED] group-hover:text-[#BA7786] text-[12px]" />
-                </div>
-              ))}
-            </div>
-          </div>
 
           {/* --- CONTACT SIDEBAR --- */}
           <div className="bg-[#212121] p-8 rounded-[15px] text-white shadow-2xl relative overflow-hidden">

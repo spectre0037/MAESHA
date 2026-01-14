@@ -439,7 +439,7 @@ const AdminProductCard = ({ product, onEdit }) => (
       {product.name}
     </h4>
     <p className="text-[#BA7786] font-bold text-[12px] md:text-[14px] mb-3 md:mb-4">
-      ${Number(product.price).toFixed(2)}
+      {Number(product.price).toFixed(2)} PKR
     </p>
     <button
       onClick={onEdit}
