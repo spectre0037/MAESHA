@@ -18,17 +18,31 @@ const Home = () => {
   const carouselData = [
     {
       id: 1,
-      title: "Fresh Summer Collection",
+      title: "Mens",
       subtitle: "Get up to 50% off on all new arrivals",
-      img: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80",
-      link: "/category/fashion",
+      img: "../../src/assets/1.jpeg",
+      link: "/category",
     },
     {
       id: 2,
+      title: "Women",
+      subtitle: "Latest gadgets for your workspace",
+      img: "../../src/assets/2.jpeg",
+      link: "/category",
+    },
+    {
+      id: 3,
       title: "Tech Essentials 2024",
       subtitle: "Latest gadgets for your workspace",
-      img: "https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=1200&q=80",
-      link: "/category/electronics",
+      img: "../../src/assets/3.jpeg",
+      link: "/category",
+    },
+    {
+      id: 4,
+      title: "Jhumkas",
+      subtitle: "Latest gadgets for your workspace",
+      img: "../../src/assets/4.jpeg",
+      link: "/category",
     },
   ];
 
