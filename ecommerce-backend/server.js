@@ -12,7 +12,7 @@ app.use(helmet({
   crossOriginResourcePolicy: false, // Allows images to load on frontend
 })); 
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:5173', 
+  origin:'https://www.maesha.store',
   credentials: true
 }));
 app.use(morgan('dev')); 
