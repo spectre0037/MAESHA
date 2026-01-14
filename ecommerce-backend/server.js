@@ -12,7 +12,7 @@ app.use(helmet({
   crossOriginResourcePolicy: false, // Allows images to load on frontend
 })); 
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'https://frontend-3gei.onrender.com',
+  origin: process.env.CLIENT_URL || 'www.maesha.store',
   credentials: true
 }));
 app.use(morgan('dev')); 
