@@ -143,7 +143,7 @@ const Login = () => {
               className="text-[#212121] font-bold hover:text-[#BA7786] transition-colors uppercase tracking-tight ml-1 inline-block"
               onClick={() => dispatch(clearError())}
             >
-              Join the collection
+              register now
             </Link>
           </p>
         </div>

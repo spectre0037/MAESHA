@@ -64,7 +64,7 @@ const Signup = () => {
       <div className="max-w-[480px] w-full bg-white p-6 sm:p-10 md:p-12 rounded-[15px] shadow-lg md:shadow-sm border border-[#EDEDED] transform transition-all duration-700 animate-in fade-in slide-in-from-bottom-6">
         <div className="text-center mb-8">
           <h1 className="text-[20px] md:text-[24px] font-bold text-[#212121] uppercase tracking-[0.2em] mb-2">
-            JOIN <span className="text-[#BA7786]">ANON</span>
+            JOIN <span className="text-[#BA7786]">MAESHA</span>
           </h1>
           <div className="w-12 h-[2px] bg-[#212121] mx-auto mb-4"></div>
           <p className="text-[#787878] text-[12px] md:text-[13px] font-medium italic">

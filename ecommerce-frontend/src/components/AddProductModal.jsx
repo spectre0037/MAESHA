@@ -179,10 +179,15 @@ const AddProductModal = ({ onClose, onRefresh }) => {
                     setFormData({ ...formData, category: e.target.value })
                   }
                 >
-                  <option value="Electronics">Electronics</option>
-                  <option value="Fashion">Fashion</option>
-                  <option value="Accessories">Accessories</option>
+                  <option value="Men">Men</option>
+                  <option value="Women">Women</option>
+                  <option value="Bracelets">Bracelets</option>
                   <option value="General">General</option>
+                  <option value="pendants">Pendants</option>
+                  <option value="newArrival">New Arrival</option>
+                  <option value="Rings">Rings</option>
+                  <option value="EarRings">Ear Rings</option>
+                  <option value="Jhumkas">Jhumkas</option>
                 </select>
               </div>
             </div>
