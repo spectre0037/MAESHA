@@ -1,0 +1,9 @@
+services:
+  - type: static
+    name: maesha-frontend
+    env: static
+    buildCommand: npm run build
+    publishPath: ./dist # or ./build depending on your project
+    routes:
+      - source: /*
+        destination: /index.html
