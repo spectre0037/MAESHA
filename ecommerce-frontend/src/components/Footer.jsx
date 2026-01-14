@@ -60,7 +60,7 @@ const Footer = () => {
           {/* Brand Column */}
           <motion.div variants={itemVariants} className="space-y-6">
             <h3 className="text-[20px] font-black tracking-[0.3em] text-white">
-              ANON<span className="text-[#FF8F9C]">.</span>
+              MAESHA<span className="text-[#FF8F9C]">.</span>
             </h3>
             <p className="text-gray-400 text-[13px] leading-relaxed">
               Curating high-performance essentials for the modern minimalist. Precision crafted. Ethically sourced.
@@ -104,7 +104,7 @@ const Footer = () => {
         {/* --- BOTTOM BAR --- */}
         <div className="border-t border-white/5 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-[11px] uppercase tracking-widest">
-            © 2026 ANON DESIGN STUDIO. ALL RIGHTS RESERVED.
+            © 2026 MAESHA. ALL RIGHTS RESERVED.
           </p>
           <div className="flex gap-8">
             <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" className="h-4 opacity-30 grayscale hover:grayscale-0 transition-all" />
