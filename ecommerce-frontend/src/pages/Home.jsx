@@ -27,21 +27,21 @@ const Home = () => {
       id: 2,
       title: "Women",
       subtitle: "Latest gadgets for your workspace",
-      img: "../assets/2.jpeg",
+      img: "./assets/2.jpeg",
       link: "/category",
     },
     {
       id: 3,
       title: "Tech Essentials 2024",
       subtitle: "Latest gadgets for your workspace",
-      img: "../assets/3.jpeg",
+      img: "./assets/3.jpeg",
       link: "/category",
     },
     {
       id: 4,
       title: "Jhumkas",
       subtitle: "Latest gadgets for your workspace",
-      img: "../assets/4.jpeg",
+      img: "./assets/4.jpeg",
       link: "/category",
     },
   ];
@@ -110,7 +110,7 @@ const Home = () => {
             {carouselData.map((slide) => (
               <div key={slide.id} className="min-w-full h-full relative">
                 <img
-                  src={slide.img}
+                  src="../assets/1.jpeg"
                   alt={slide.title}
                   className="w-full h-full object-cover"
                 />
