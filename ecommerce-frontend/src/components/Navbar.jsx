@@ -103,7 +103,7 @@ const Navbar = () => {
                   to="/admin"
                   className="hidden lg:flex items-center gap-2 text-[#212121] hover:text-[#FF8F9C] text-[13px] font-bold uppercase tracking-widest transition-all"
                 >
-                  <FaShieldAlt /> HQ
+                  <FaShieldAlt /> ADMIN PANEL
                 </Link>
               )}
 
