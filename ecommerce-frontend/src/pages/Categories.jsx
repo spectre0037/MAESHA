@@ -18,9 +18,9 @@ const Categories = () => {
   const getHeroContent = () => {
     const category = selectedCategory?.toLowerCase();
     switch (category) {
-      case "men":
+      case "Jhumkas":
         return {
-          title: "Men's Collection",
+          title: "Women's Collection",
           subtitle: "Precision tailoring and modern essentials.",
           img: "https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?q=80&w=2071&auto=format&fit=crop",
         };
@@ -39,7 +39,7 @@ const Categories = () => {
       default:
         return {
           title: "New Collections",
-          subtitle: "Discover our curated range of premium goods.",
+          subtitle: "Discover our curated range of premium jewelry.",
           img: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2070&auto=format&fit=crop",
         };
     }
@@ -100,7 +100,7 @@ const Categories = () => {
           <div className="relative z-10 w-full max-w-2xl px-6 md:px-16 py-10">
             <div className="bg-white/40 backdrop-blur-md p-6 md:p-10 rounded-[12px] border border-white/50 inline-block animate-in fade-in slide-in-from-left-4">
               <p className="text-[#BA7786] text-[12px] md:text-[14px] font-bold uppercase tracking-[0.3em] mb-3">
-                Trending Category
+                Trending Categories +
               </p>
               <h1 className="text-[#212121] text-[32px] md:text-[48px] font-extrabold leading-[1.1] mb-4 capitalize">
                 {hero.title}
