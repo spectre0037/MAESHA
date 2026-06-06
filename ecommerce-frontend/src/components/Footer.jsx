@@ -46,7 +46,6 @@ const Footer = () => {
   };
 
   const collectionsLinks = [
-    { name: "Men", path: "/categories" },
     { name: "Women", path: "/categories" },
     { name: "Bracelets", path: "/categories" },
     { name: "New Arrivals", path: "/categories" },
